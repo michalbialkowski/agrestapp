@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html data-bs-theme="auto" lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AgrestApp</title>
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/style.compiled.css">
+</head>
+
+<body>
+    <div>
+        <main>
+            <section class="app-layout">
+                <div class="row app-layout-row">
+                    <div class="col app-layout-col-sidebar border-end">
+                        <div class="card">
+                            <div class="card-header p-3">
+                                <div><a class="d-inline-block" href="app-dashboard.html"><img class="h--30" src="assets/img/logos/logo.svg"></a></div>
+                            </div>
+                            <div class="card-body">
+                                <div>
+                                    <ul class="list-group list-group-flush list-group-menu">
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-storage.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-storages.html">Stan magazynowy</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-products.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-products.html">Produkty</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-products-archived.html">Archiwalne</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-products-half.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-products-half.html">Półprodukty</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-materials.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-materials.html">Surowce</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-packaging.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-packaging.html">Opakowania</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-chemicals.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-chemicals.html">Chemia</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item active">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-orders.svg" width="20" height="20"></div>
+                                                <div class="col"><span class="d-block"><a href="app-orders-create.html">Zamówienia</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-orders-create.html">Nowe zamówienie</a></li>
+                                                        <li><a href="app-orders-pending.html">Oczekujące</a></li>
+                                                        <li><a href="app-orders-processing.html">W trakcie realizacji</a></li>
+                                                        <li><a href="app-orders-delivered.html">Historia zamówień</a></li>
+                                                        <li><a href="app-orders-invoices.html">Faktury</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-updates.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-updates.html">Aktualizacja cen</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-updates-create.html">Nowe zgłoszenie</a></li>
+                                                        <li><a href="app-updates.html">Historia zgłoszeń</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-auctions.html">Aukcje</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-auctions.html">Lista aukcji</a></li>
+                                                        <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="#!">Dodatkowe</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-addons-units.html">Jednostki miary</a></li>
+                                                        <li><a href="app-addons-packages.html">Jednostki opakowań</a></li>
+                                                        <li><a href="app-addons-manufacturers.html">Producenci</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <div class="dropup"><button class="btn btn-light dropdown-toggle text-start d-flex justify-content-between align-items-center w-100 p-2 app-btn-notification" aria-expanded="false" data-bs-toggle="dropdown" type="button"><span class="d-block me-2"><span class="align-items-center flex-nowrap row gx-2"><span class="col-auto"><img class="w--20 h--20" width="20" height="20" src="assets/img/avatars/avatar-agrest.png"></span><span class="col maxw--130"><small class="text-truncate d-block">ProSix System</small><span class="text-truncate d-block">Aplikacja Tabletowa</span></span></span></span><span class="badge"><small>42</small></span></button>
+                                        <div class="dropdown-menu shadow w-100 border-0"><a class="dropdown-item" href="app-admin-account.html">Twoje konto</a><a class="dropdown-item" href="app-admin-notifications.html">Powiadomienia</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="app-admin-users.html">Użytkownicy</a><a class="dropdown-item" href="app-admin-companies.html">Firmy</a><a class="dropdown-item" href="app-admin-subscriptions.html">Subskrypcje</a><a class="dropdown-item" href="app-admin-plans.html">Plany</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Wyloguj się</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col app-layout-col-main">
+                        <div class="card">
+                            <div class="card-header">
+                                <div>
+                                    <div class="row gx-1 align-items-center">
+                                        <div class="col"><small class="d-block fs--small">Administracja</small>
+                                            <div>
+                                                <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Plany</button>
+                                                    <div class="dropdown-menu"><a class="dropdown-item" href="app-admin-account.html">Twoje konto</a><a class="dropdown-item" href="app-admin-notifications.html">Powiadomienia</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="app-admin-users.html">Użytkownicy</a><a class="dropdown-item" href="app-admin-companies.html">Firmy</a><a class="dropdown-item" href="app-admin-subscriptions.html">Subskrypcje</a><a class="dropdown-item" href="app-admin-plans.html">Plany</a>
+                                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Wyloguj się</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto"><button class="btn app-btn-notification p-0" type="button" data-bs-target="#modal__menu" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list fs--xxlarge">
+                                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                                </svg><span class="badge"><small>42</small></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal__menu">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 position-relative"><a class="d-inline-block" href="app-dashboard.html"><img class="h--30" src="assets/img/logos/logo.svg"></a><button class="btn-close position-absolute top-0 end-0 p-3 m-0" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body p-0">
+                        <div>
+                            <ul class="list-group list-group-flush list-group-menu">
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-storages.html">Stan magazynowy</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-products.html">Produkty</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-products-archived.html">Archiwalne</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-products-half.html">Półprodukty</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-materials.html">Surowce</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-packaging.html">Opakowania</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-chemicals.html">Chemia</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-orders-create.html">Zamówienia</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-orders-create.html">Nowe zamówienie</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-pending.html">Oczekujące</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-processing.html">W trakcie realizacji</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-delivered.html">Historia zamówień</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-invoices.html">Faktury</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-updates.html">Aktualizacja cen</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-updates-create.html">Nowe zgłoszenie</a></li>
+                                        <li class="list-inline-item"><a href="app-updates.html">Historia zgłoszeń</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-auctions.html">Aukcje</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-auctions.html">Lista aukcji</a></li>
+                                        <li class="list-inline-item"><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="#!">Dodatkowe</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-addons-units.html">Jednostki miary</a></li>
+                                        <li class="list-inline-item"><a href="app-addons-packages.html">Jednostki opakowań</a></li>
+                                        <li class="list-inline-item"><a href="app-addons-packages.html">Producenci</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/custom/libs/flickity.pkgd.min.js"></script>
+    <script src="assets/js/custom/libs/masonry.pkgd.js"></script>
+    <script src="assets/js/custom/libs/triggers/flickity.js"></script>
+    <script src="assets/js/custom/libs/triggers/masonry.js"></script>
+</body>
+
+</html>

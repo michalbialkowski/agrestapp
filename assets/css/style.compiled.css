@@ -7028,11 +7028,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-body-emphasis, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a {
+.link-body-emphasis, .list-group-menu .list-group-item a {
   color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-body-emphasis:hover, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a:hover, .link-body-emphasis:focus, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a:focus {
+.link-body-emphasis:hover, .list-group-menu .list-group-item a:hover, .link-body-emphasis:focus, .list-group-menu .list-group-item a:focus {
   color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 0.75)) !important;
   text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 0.75)) !important;
 }
@@ -7399,7 +7399,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .app-btn-menu .badge > small, .app-btn-menu .badge > .small, .app-btn-menu .badge, .flex-area, .app-layout > .app-layout-row > * {
+.d-flex, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge, .flex-area, .app-layout > .app-layout-row > * {
   display: flex !important;
 }
 
@@ -7463,11 +7463,11 @@ textarea.form-control-lg {
   position: static !important;
 }
 
-.position-relative, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-menu {
+.position-relative, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-notification {
   position: relative !important;
 }
 
-.position-absolute, .app-btn-menu .badge {
+.position-absolute, .app-btn-notification .badge {
   position: absolute !important;
 }
 
@@ -7479,7 +7479,7 @@ textarea.form-control-lg {
   position: sticky !important;
 }
 
-.top-0, .app-btn-menu .badge {
+.top-0, .app-btn-notification .badge {
   top: 0 !important;
 }
 
@@ -7511,7 +7511,7 @@ textarea.form-control-lg {
   left: 50% !important;
 }
 
-.start-100, .app-btn-menu .badge {
+.start-100, .app-btn-notification .badge {
   left: 100% !important;
 }
 
@@ -7527,7 +7527,7 @@ textarea.form-control-lg {
   right: 100% !important;
 }
 
-.translate-middle, .app-btn-menu .badge {
+.translate-middle, .app-btn-notification .badge {
   transform: translate(-50%, -50%) !important;
 }
 
@@ -7789,11 +7789,11 @@ textarea.form-control-lg {
   flex-grow: 0 !important;
 }
 
-.flex-grow-1 {
+.flex-grow-1, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header > div {
   flex-grow: 1 !important;
 }
 
-.flex-shrink-0, .app-btn-menu .badge > small, .app-btn-menu .badge > .small, .app-btn-menu .badge {
+.flex-shrink-0, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge {
   flex-shrink: 0 !important;
 }
 
@@ -7821,7 +7821,7 @@ textarea.form-control-lg {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .app-btn-menu .badge > small, .app-btn-menu .badge > .small, .app-btn-menu .badge {
+.justify-content-center, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge {
   justify-content: center !important;
 }
 
@@ -7845,7 +7845,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center, .list-group-item-product > .row, .app-btn-menu .badge > small, .app-btn-menu .badge > .small, .app-btn-menu .badge {
+.align-items-center, .list-group-item-product > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge {
   align-items: center !important;
 }
 
@@ -8297,7 +8297,7 @@ textarea.form-control-lg {
   margin-left: -3rem !important;
 }
 
-.p-0, .list-group-item-product, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body, .app-btn-menu {
+.p-0, .list-group-item-product, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body {
   padding: 0 !important;
 }
 
@@ -8641,7 +8641,7 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
-.text-decoration-none, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a {
+.text-decoration-none, .list-group-menu .list-group-item a {
   text-decoration: none !important;
 }
 
@@ -9000,7 +9000,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-danger, .app-btn-menu .badge > small, .app-btn-menu .badge > .small {
+.bg-danger, .app-btn-notification .badge > small, .app-btn-notification .badge > .small {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9025,7 +9025,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-body, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-menu .badge {
+.bg-body, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-notification .badge {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9089,7 +9089,7 @@ textarea.form-control-lg {
   background-color: var(--bs-danger-bg-subtle) !important;
 }
 
-.bg-light-subtle, .app-layout > .app-layout-row > *.app-layout-col-main > .card {
+.bg-light-subtle, .list-group-menu .list-group-item.active, .app-layout > .app-layout-row > *.app-layout-col-main > .card {
   background-color: var(--bs-light-bg-subtle) !important;
 }
 
@@ -9149,7 +9149,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius-xxl) !important;
 }
 
-.rounded-circle, .app-btn-menu .badge > small, .app-btn-menu .badge > .small, .app-btn-menu .badge {
+.rounded-circle, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge {
   border-radius: 50% !important;
 }
 
@@ -12768,12 +12768,12 @@ body {
   max-height: 100vh;
 }
 
-.app-btn-menu .badge {
+.app-btn-notification .badge {
   width: 26px;
   height: 26px;
   line-height: 1;
 }
-.app-btn-menu .badge > small, .app-btn-menu .badge > .small {
+.app-btn-notification .badge > small, .app-btn-notification .badge > .small {
   width: 20px;
   height: 20px;
 }
@@ -12806,6 +12806,9 @@ body {
   }
 }
 
+.list-group-menu .list-group-item.active {
+  border-color: var(--bs-list-group-border-color);
+}
 /* ! Flickity v2.2.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -20236,11 +20239,11 @@ body.compensate-for-scrollbar {
   max-width: 65px !important;
 }
 
-.h--65 {
+.h--65, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   height: 65px !important;
 }
 
-.minh--65 {
+.minh--65, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   min-height: 65px !important;
 }
 

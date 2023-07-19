@@ -100,41 +100,110 @@
                 <div class="row app-layout-row">
                     <div class="col app-layout-col-sidebar border-end">
                         <div class="card">
-                            <div class="card-header p-3"><img class="h--30" src="assets/img/logos/logo.svg"></div>
+                            <div class="card-header p-3">
+                                <div><a class="d-inline-block" href="app-dashboard.html"><img class="h--30" src="assets/img/logos/logo.svg"></a></div>
+                            </div>
                             <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><span class="d-block">Stan magazynowy</span></li>
-                                    <li class="list-group-item"><span class="d-block">Produkty</span>
-                                        <ul class="list-unstyled small ps-3">
-                                            <li>Archiwalne</li>
-                                        </ul>
-                                    </li>
-                                    <li class="list-group-item"><span class="d-block">Półprodukty</span></li>
-                                    <li class="list-group-item"><span class="d-block">Surowce</span></li>
-                                    <li class="list-group-item"><span class="d-block">Opakowania</span></li>
-                                    <li class="list-group-item"><span class="d-block">Chemia</span></li>
-                                    <li class="list-group-item"><span class="d-block">Zamówienia</span>
-                                        <ul class="list-unstyled small ps-3">
-                                            <li>Nowe zamówienia</li>
-                                            <li>Oczekujące</li>
-                                            <li>W trakcie realizacji</li>
-                                            <li>Historia zamówień</li>
-                                            <li>Faktury</li>
-                                        </ul>
-                                    </li>
-                                    <li class="list-group-item"><span class="d-block">Aktualizacja cen</span></li>
-                                    <li class="list-group-item"><span class="d-block">Aukcje</span>
-                                        <ul class="list-unstyled small ps-3">
-                                            <li>Lista aukcji</li>
-                                            <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                                <div>
+                                    <ul class="list-group list-group-flush list-group-menu">
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-storage.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-storages.html">Stan magazynowy</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-products.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-products.html">Produkty</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-products-archived.html">Archiwalne</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-products-half.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-products-half.html">Półprodukty</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-materials.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-materials.html">Surowce</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-packaging.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-packaging.html">Opakowania</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-chemicals.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-chemicals.html">Chemia</a></span></div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item active">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-orders.svg" width="20" height="20"></div>
+                                                <div class="col"><span class="d-block"><a href="app-orders-create.html">Zamówienia</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-orders-create.html">Nowe zamówienie</a></li>
+                                                        <li><a href="app-orders-pending.html">Oczekujące</a></li>
+                                                        <li><a href="app-orders-processing.html">W trakcie realizacji</a></li>
+                                                        <li><a href="app-orders-delivered.html">Historia zamówień</a></li>
+                                                        <li><a href="app-orders-invoices.html">Faktury</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-updates.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-updates.html">Aktualizacja cen</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-updates-create.html">Nowe zgłoszenie</a></li>
+                                                        <li><a href="app-updates.html">Historia zgłoszeń</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="app-auctions.html">Aukcje</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-auctions.html">Lista aukcji</a></li>
+                                                        <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row gx-2">
+                                                <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg"></div>
+                                                <div class="col"><span class="d-block"><a href="#!">Dodatkowe</a></span>
+                                                    <ul class="list-unstyled small mt-1">
+                                                        <li><a href="app-addons-units.html">Jednostki miary</a></li>
+                                                        <li><a href="app-addons-packages.html">Jednostki opakowań</a></li>
+                                                        <li><a href="app-addons-manufacturers.html">Producenci</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="card-footer">
-                                <div class="dropup"><button class="btn dropdown-toggle d-flex justify-content-between align-items-center w-100 p-3" aria-expanded="false" data-bs-toggle="dropdown" type="button">Aplikacja Tabletowa</button>
-                                    <div class="dropdown-menu shadow w-100 border-0"><a class="dropdown-item" href="#">Twoje konto</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Wyloguj się</a>
+                                <div>
+                                    <div class="dropup"><button class="btn btn-light dropdown-toggle text-start d-flex justify-content-between align-items-center w-100 p-2 app-btn-notification" aria-expanded="false" data-bs-toggle="dropdown" type="button"><span class="d-block me-2"><span class="align-items-center flex-nowrap row gx-2"><span class="col-auto"><img class="w--20 h--20" width="20" height="20" src="assets/img/avatars/avatar-agrest.png"></span><span class="col maxw--130"><small class="text-truncate d-block">ProSix System</small><span class="text-truncate d-block">Aplikacja Tabletowa</span></span></span></span><span class="badge"><small>42</small></span></button>
+                                        <div class="dropdown-menu shadow w-100 border-0"><a class="dropdown-item" href="app-admin-account.html">Twoje konto</a><a class="dropdown-item" href="app-admin-notifications.html">Powiadomienia</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="app-admin-users.html">Użytkownicy</a><a class="dropdown-item" href="app-admin-companies.html">Firmy</a><a class="dropdown-item" href="app-admin-subscriptions.html">Subskrypcje</a><a class="dropdown-item" href="app-admin-plans.html">Plany</a>
+                                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Wyloguj się</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -143,38 +212,227 @@
                     <div class="col app-layout-col-main">
                         <div class="card">
                             <div class="card-header">
-                                <div class="row gx-1 align-items-center">
-                                    <div class="col-auto"><button class="btn p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-bar-left fs--xxlarge">
-                                                <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"></path>
-                                            </svg></button></div>
-                                    <div class="col"><small class="d-block fs--small">Aukcje</small>
-                                        <div>
-                                            <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Wystaw nową aukcję</button>
-                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">Nowe zamówienie</a><a class="dropdown-item" href="#">Oczekujące</a><a class="dropdown-item" href="#">W trakcie realizacji</a><a class="dropdown-item" href="#">Historia zamówień</a><a class="dropdown-item" href="#">Faktury</a></div>
+                                <div>
+                                    <div class="row gx-1 align-items-center">
+                                        <div class="col"><small class="d-block fs--small">Aukcje</small>
+                                            <div>
+                                                <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Wystaw nową aukcję</button>
+                                                    <div class="dropdown-menu"><a class="dropdown-item" href="app-auctions.html">Lista aukcji</a><a class="dropdown-item" href="app-auctions-create.html">Wystaw nową aukcję</a></div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-auto"><button class="btn app-btn-notification p-0" type="button" data-bs-target="#modal__menu" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list fs--xxlarge">
+                                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                                </svg><span class="badge"><small>42</small></span></button></div>
                                     </div>
-                                    <div class="col-auto"><button class="btn app-btn-menu" type="button" data-bs-target="#modal__menu" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list fs--xxlarge">
-                                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
-                                            </svg><span class="badge"><small>42</small></span></button></div>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2">
-                                    <div class="col">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <div class="row gx-2 align-items-center">
-                                                    <div class="col"><small class="d-block fs--small">Wybrane produkty</small>
-                                                        <div>
-                                                            <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
-                                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                                <div>
+                                    <div class="row gy-3 row-cols-1 row-cols-md-2 row-cols-lg-1 row-cols-xl-2">
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <div class="row gx-2 align-items-center">
+                                                        <div class="col"><small class="d-block fs--small">Wybrane produkty</small>
+                                                            <div>
+                                                                <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                                                                </div>
                                                             </div>
                                                         </div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas">Dodaj</button></div>
                                                     </div>
-                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas">Dodaj</button></div>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item list-group-item-product">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col flex-grow-1">
+                                                                <div>
+                                                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                                                        <div class="col-auto">
+                                                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-product">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col flex-grow-1">
+                                                                <div>
+                                                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                                                        <div class="col-auto">
+                                                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-product">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col flex-grow-1">
+                                                                <div>
+                                                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                                                        <div class="col-auto">
+                                                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-product">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col flex-grow-1">
+                                                                <div>
+                                                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                                                        <div class="col-auto">
+                                                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-product">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col flex-grow-1">
+                                                                <div>
+                                                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                                                        <div class="col-auto">
+                                                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item list-group-item-product">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col flex-grow-1">
+                                                                <div>
+                                                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                                                        <div class="col-auto">
+                                                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                        </div>
+                                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="card-footer">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Poprzednie</button></div>
+                                                        <div class="col-auto d-none">
+                                                            <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
+                                                        </div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Następne</button></div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h5 class="mb-0">Szczegóły aukcji</h5>
+                                                </div>
+                                                <ul class="list-group list-group-flush">
+                                                    <li class="list-group-item"><span class="d-block">Rozpoczęcie</span>
+                                                        <div class="row justify-content-between align-items-baseline">
+                                                            <div class="col-auto"><small>Data</small></div>
+                                                            <div class="col-auto"><input class="form-control-sm form-control" type="date"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item"><span class="d-block">Zakończenie</span></li>
+                                                    <li class="list-group-item"><span class="d-block">Dostawa</span></li>
+                                                    <li class="list-group-item"><span class="d-block">Zasady aukcji</span></li>
+                                                </ul>
+                                                <div class="card-footer"><button class="btn btn-primary" type="button">Wystaw aukcję</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__products">
+                                        <div class="offcanvas-header d-block border-bottom py-2">
+                                            <div class="row align-items-center">
+                                                <div class="col"><small class="d-block fs--small">Dostępny asortyment</small>
+                                                    <div>
+                                                        <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
+                                                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#collapse__offcanvas__search" data-bs-toggle="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                                        </svg></button></div>
+                                                <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg fs--xlarge">
+                                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                                                        </svg></button></div>
+                                            </div>
+                                        </div>
+                                        <div id="collapse__offcanvas__search" class="collapse">
+                                            <div class="bg-light-subtle p-3 border-bottom">
+                                                <div class="input-group"><input class="form-control" type="text"><button class="btn btn-primary" type="button">Wyszukaj</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="offcanvas-body p-0">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item list-group-item-product">
                                                     <div class="row">
@@ -192,7 +450,7 @@
                                                                     <div class="col-auto">
                                                                         <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
                                                                     </div>
-                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -214,7 +472,7 @@
                                                                     <div class="col-auto">
                                                                         <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
                                                                     </div>
-                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -236,7 +494,7 @@
                                                                     <div class="col-auto">
                                                                         <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
                                                                     </div>
-                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -258,225 +516,39 @@
                                                                     <div class="col-auto">
                                                                         <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
                                                                     </div>
-                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item list-group-item-product">
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
-                                                            <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
-                                                                <ul class="list-inline small">
-                                                                    <li class="list-inline-item">worek</li>
-                                                                    <li class="list-inline-item">0.5 kg</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col flex-grow-1">
-                                                            <div>
-                                                                <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
-                                                                    <div class="col-auto">
-                                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
-                                                                    </div>
-                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item list-group-item-product">
-                                                    <div class="row">
-                                                        <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
-                                                            <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
-                                                                <ul class="list-inline small">
-                                                                    <li class="list-inline-item">worek</li>
-                                                                    <li class="list-inline-item">0.5 kg</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col flex-grow-1">
-                                                            <div>
-                                                                <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
-                                                                    <div class="col-auto">
-                                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
-                                                                    </div>
-                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </li>
                                             </ul>
-                                            <div class="card-footer">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Poprzednie</button></div>
-                                                    <div class="col-auto d-none">
-                                                        <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
-                                                    </div>
-                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Następne</button></div>
-                                                </div>
-                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <div class="card-header">
-                                                <h5 class="mb-0">Szczegóły aukcji</h5>
+                                        <div class="bg-light-subtle p-3 border-top py-2">
+                                            <div class="row justify-content-between">
+                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Poprzednie</button></div>
+                                                <div class="col-auto d-none">
+                                                    <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
+                                                </div>
+                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Następne</button></div>
                                             </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item"><span class="d-block">Rozpoczęcie</span>
-                                                    <div class="row justify-content-between align-items-baseline">
-                                                        <div class="col-auto"><small>Data</small></div>
-                                                        <div class="col-auto"><input class="form-control-sm form-control" type="date"></div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item"><span class="d-block">Zakończenie</span></li>
-                                                <li class="list-group-item"><span class="d-block">Dostawa</span></li>
-                                                <li class="list-group-item"><span class="d-block">Zasady aukcji</span></li>
-                                            </ul>
-                                            <div class="card-footer"><button class="btn btn-primary" type="button">Wystaw aukcję</button></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__products">
-                                    <div class="offcanvas-header d-block border-bottom py-2">
-                                        <div class="row align-items-center">
-                                            <div class="col"><small class="d-block fs--small">Dostępny asortyment</small>
-                                                <div>
-                                                    <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
-                                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#collapse__offcanvas__search" data-bs-toggle="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
-                                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                                    </svg></button></div>
-                                            <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg fs--xlarge">
-                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                                                    </svg></button></div>
-                                        </div>
-                                    </div>
-                                    <div id="collapse__offcanvas__search" class="collapse">
-                                        <div class="bg-light-subtle p-3 border-bottom">
-                                            <div class="input-group"><input class="form-control" type="text"><button class="btn btn-primary" type="button">Wyszukaj</button></div>
-                                        </div>
-                                    </div>
-                                    <div class="offcanvas-body p-0">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item list-group-item-product">
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
-                                                        <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
-                                                            <ul class="list-inline small">
-                                                                <li class="list-inline-item">worek</li>
-                                                                <li class="list-inline-item">0.5 kg</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col flex-grow-1">
-                                                        <div>
-                                                            <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
-                                                                <div class="col-auto">
-                                                                    <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
-                                                                </div>
-                                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item list-group-item-product">
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
-                                                        <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
-                                                            <ul class="list-inline small">
-                                                                <li class="list-inline-item">worek</li>
-                                                                <li class="list-inline-item">0.5 kg</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col flex-grow-1">
-                                                        <div>
-                                                            <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
-                                                                <div class="col-auto">
-                                                                    <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
-                                                                </div>
-                                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item list-group-item-product">
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
-                                                        <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
-                                                            <ul class="list-inline small">
-                                                                <li class="list-inline-item">worek</li>
-                                                                <li class="list-inline-item">0.5 kg</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col flex-grow-1">
-                                                        <div>
-                                                            <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
-                                                                <div class="col-auto">
-                                                                    <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
-                                                                </div>
-                                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item list-group-item-product">
-                                                <div class="row">
-                                                    <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
-                                                        <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
-                                                            <ul class="list-inline small">
-                                                                <li class="list-inline-item">worek</li>
-                                                                <li class="list-inline-item">0.5 kg</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col flex-grow-1">
-                                                        <div>
-                                                            <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
-                                                                <div class="col-auto">
-                                                                    <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
-                                                                </div>
-                                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="bg-light-subtle p-3 border-top py-2">
-                                        <div class="row justify-content-between">
-                                            <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Poprzednie</button></div>
-                                            <div class="col-auto d-none">
-                                                <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
-                                            </div>
-                                            <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Następne</button></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-footer p-0">
-                                <div class="row g-0 align-items-end">
-                                    <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
-                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                            </svg><small class="d-block mt-1">Wyszukaj</small></button></div>
-                                    <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
-                                                <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
-                                            </svg><small class="d-block mt-1">Filtruj</small></button></div>
-                                    <div class="col"><button class="btn btn-sm w-100 py-2" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-circle-fill fs--xlarge">
-                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
-                                            </svg><small class="d-block mt-1">Dodaj</small></button></div>
+                            <div class="card-footer">
+                                <div>
+                                    <div class="row g-0 align-items-end">
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                                </svg><small class="d-block mt-1">Wyszukaj</small></button></div>
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
+                                                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
+                                                </svg><small class="d-block mt-1">Filtruj</small></button></div>
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-circle-fill fs--xlarge">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                                                </svg><small class="d-block mt-1">Dodaj</small></button></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -489,36 +561,50 @@
         <div class="modal fade" role="dialog" tabindex="-1" id="modal__menu">
             <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
                 <div class="modal-content">
-                    <div class="modal-header border-0 position-relative"><button class="btn-close position-absolute top-0 end-0 p-3 m-0" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-header border-0 position-relative"><a class="d-inline-block" href="app-dashboard.html"><img class="h--30" src="assets/img/logos/logo.svg"></a><button class="btn-close position-absolute top-0 end-0 p-3 m-0" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
                     <div class="modal-body p-0">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><span class="d-block">Stan magazynowy</span></li>
-                            <li class="list-group-item"><span class="d-block">Produkty</span>
-                                <ul class="list-unstyled small ps-3">
-                                    <li>Archiwalne</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item"><span class="d-block">Półprodukty</span></li>
-                            <li class="list-group-item"><span class="d-block">Surowce</span></li>
-                            <li class="list-group-item"><span class="d-block">Opakowania</span></li>
-                            <li class="list-group-item"><span class="d-block">Chemia</span></li>
-                            <li class="list-group-item"><span class="d-block">Zamówienia</span>
-                                <ul class="list-unstyled small ps-3">
-                                    <li>Nowe zamówienia</li>
-                                    <li>Oczekujące</li>
-                                    <li>W trakcie realizacji</li>
-                                    <li>Historia zamówień</li>
-                                    <li>Faktury</li>
-                                </ul>
-                            </li>
-                            <li class="list-group-item"><span class="d-block">Aktualizacja cen</span></li>
-                            <li class="list-group-item"><span class="d-block">Aukcje</span>
-                                <ul class="list-unstyled small ps-3">
-                                    <li>Lista aukcji</li>
-                                    <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div>
+                            <ul class="list-group list-group-flush list-group-menu">
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-storages.html">Stan magazynowy</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-products.html">Produkty</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-products-archived.html">Archiwalne</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-products-half.html">Półprodukty</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-materials.html">Surowce</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-packaging.html">Opakowania</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-chemicals.html">Chemia</a></span></li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-orders-create.html">Zamówienia</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-orders-create.html">Nowe zamówienie</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-pending.html">Oczekujące</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-processing.html">W trakcie realizacji</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-delivered.html">Historia zamówień</a></li>
+                                        <li class="list-inline-item"><a href="app-orders-invoices.html">Faktury</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-updates.html">Aktualizacja cen</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-updates-create.html">Nowe zgłoszenie</a></li>
+                                        <li class="list-inline-item"><a href="app-updates.html">Historia zgłoszeń</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="app-auctions.html">Aukcje</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-auctions.html">Lista aukcji</a></li>
+                                        <li class="list-inline-item"><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-group-item"><span class="text-center d-block"><a href="#!">Dodatkowe</a></span>
+                                    <ul class="list-inline d-flex justify-content-center flex-wrap small mt-1">
+                                        <li class="list-inline-item"><a href="app-addons-units.html">Jednostki miary</a></li>
+                                        <li class="list-inline-item"><a href="app-addons-packages.html">Jednostki opakowań</a></li>
+                                        <li class="list-inline-item"><a href="app-addons-packages.html">Producenci</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
