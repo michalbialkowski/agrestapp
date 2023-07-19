@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html data-bs-theme="auto" lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AgrestApp</title>
+    <script>
+        (function() {
+
+            // JavaScript snippet handling Dark/Light mode switching
+
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+            const forcedTheme = document.documentElement.getAttribute('data-bss-forced-theme');
+
+            const getPreferredTheme = () => {
+
+                if (forcedTheme) return forcedTheme;
+
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+
+                const pageTheme = document.documentElement.getAttribute('data-bs-theme');
+
+                if (pageTheme) {
+                    return pageTheme;
+                }
+
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            }
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            }
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
+
+                if (!themeSwitchers.length) return;
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                for (const themeSwitcher of themeSwitchers) {
+
+                    const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
+
+                    if (btnToActivate) {
+                        btnToActivate.classList.add('active');
+                        btnToActivate.setAttribute('aria-pressed', 'true');
+                    }
+                }
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const theme = toggle.getAttribute('data-bs-theme-value');
+                            setStoredTheme(theme);
+                            setTheme(theme);
+                            showActiveTheme(theme);
+                        })
+                    })
+            });
+        })();
+    </script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/style.compiled.css">
+</head>
+
+<body>
+    <div>
+        <main>
+            <section class="app-layout">
+                <div class="row app-layout-row">
+                    <div class="col app-layout-col-sidebar border-end">
+                        <div class="card">
+                            <div class="card-header p-3"><img class="h--30" src="assets/img/logos/logo.svg"></div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><span class="d-block">Stan magazynowy</span></li>
+                                    <li class="list-group-item"><span class="d-block">Produkty</span>
+                                        <ul class="list-unstyled small ps-3">
+                                            <li>Archiwalne</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><span class="d-block">Półprodukty</span></li>
+                                    <li class="list-group-item"><span class="d-block">Surowce</span></li>
+                                    <li class="list-group-item"><span class="d-block">Opakowania</span></li>
+                                    <li class="list-group-item"><span class="d-block">Chemia</span></li>
+                                    <li class="list-group-item"><span class="d-block">Zamówienia</span>
+                                        <ul class="list-unstyled small ps-3">
+                                            <li>Nowe zamówienia</li>
+                                            <li>Oczekujące</li>
+                                            <li>W trakcie realizacji</li>
+                                            <li>Historia zamówień</li>
+                                            <li>Faktury</li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item"><span class="d-block">Aktualizacja cen</span></li>
+                                    <li class="list-group-item"><span class="d-block">Aukcje</span>
+                                        <ul class="list-unstyled small ps-3">
+                                            <li>Lista aukcji</li>
+                                            <li>Wystaw nową aukcję</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="dropup"><button class="btn dropdown-toggle d-flex justify-content-between align-items-center w-100 p-3" aria-expanded="false" data-bs-toggle="dropdown" type="button">Aplikacja Tabletowa</button>
+                                    <div class="dropdown-menu shadow w-100 border-0"><a class="dropdown-item" href="#">Twoje konto</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Wyloguj się</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col app-layout-col-main">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row gx-1 align-items-center">
+                                    <div class="col-auto"><button class="btn p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-bar-left fs--xxlarge">
+                                                <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"></path>
+                                            </svg></button></div>
+                                    <div class="col"><small class="d-block fs--small">Aukcje</small>
+                                        <div>
+                                            <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Wystaw nową aukcję</button>
+                                                <div class="dropdown-menu"><a class="dropdown-item" href="#">Nowe zamówienie</a><a class="dropdown-item" href="#">Oczekujące</a><a class="dropdown-item" href="#">W trakcie realizacji</a><a class="dropdown-item" href="#">Historia zamówień</a><a class="dropdown-item" href="#">Faktury</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto"><button class="btn app-btn-menu" type="button" data-bs-target="#modal__menu" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list fs--xxlarge">
+                                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                                            </svg><span class="badge"><small>42</small></span></button></div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row gy-3 row-cols-1 row-cols-md-2">
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="mb-0">Wybrane produkty</h5>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="row gy-2 align-items-center flex-wrap">
+                                                        <div class="col"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                            <ul class="list-inline small">
+                                                                <li class="list-inline-item">worek</li>
+                                                                <li class="list-inline-item">0.5 kg</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-auto">
+                                                            <div class="row gx-2 align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                                </div>
+                                                                <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Usuń</button></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item"><span>List Group Item 2</span></li>
+                                                <li class="list-group-item"><span>List Group Item 3</span></li>
+                                            </ul>
+                                            <div class="card-footer">
+                                                <div class="row justify-content-between">
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Poprzednie</button></div>
+                                                    <div class="col-auto d-none">
+                                                        <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
+                                                    </div>
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Następne</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5 class="mb-0">Szczegóły aukcji</h5>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item"><span class="d-block">Rozpoczęcie</span>
+                                                    <div class="row justify-content-between align-items-baseline">
+                                                        <div class="col-auto"><small>Data</small></div>
+                                                        <div class="col-auto"><input class="form-control-sm form-control" type="date"></div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item"><span class="d-block">Zakończenie</span></li>
+                                                <li class="list-group-item"><span class="d-block">Dostawa</span></li>
+                                                <li class="list-group-item"><span class="d-block">Zasady aukcji</span></li>
+                                            </ul>
+                                            <div class="card-footer"><button class="btn btn-primary" type="button">Wystaw aukcję</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__products">
+                                    <div class="offcanvas-header d-block border-bottom py-2">
+                                        <div class="row align-items-center">
+                                            <div class="col"><small class="d-block fs--small">Dostępny asortyment</small>
+                                                <div>
+                                                    <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
+                                                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#collapse__offcanvas__search" data-bs-toggle="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                                    </svg></button></div>
+                                            <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg fs--xlarge">
+                                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                                                    </svg></button></div>
+                                        </div>
+                                    </div>
+                                    <div id="collapse__offcanvas__search" class="collapse">
+                                        <div class="bg-light-subtle p-3 border-bottom">
+                                            <div class="input-group"><input class="form-control" type="text"><button class="btn btn-primary" type="button">Wyszukaj</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas-body p-0">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item">worek</li>
+                                                            <li class="list-inline-item">0.5 kg</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                    </div>
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item">worek</li>
+                                                            <li class="list-inline-item">0.5 kg</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                    </div>
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item">worek</li>
+                                                            <li class="list-inline-item">0.5 kg</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                    </div>
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item">worek</li>
+                                                            <li class="list-inline-item">0.5 kg</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                    </div>
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row align-items-center">
+                                                    <div class="col"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                        <ul class="list-inline small">
+                                                            <li class="list-inline-item">worek</li>
+                                                            <li class="list-inline-item">0.5 kg</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                                    </div>
+                                                    <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Dodaj</button></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-light-subtle p-3 border-top py-2">
+                                        <div class="row justify-content-between">
+                                            <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Poprzednie</button></div>
+                                            <div class="col-auto d-none">
+                                                <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
+                                            </div>
+                                            <div class="col-auto"><button class="btn btn-primary btn-sm" type="button">Następne</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer p-0">
+                                <div class="row g-0 align-items-end">
+                                    <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                            </svg><small class="d-block mt-1">Wyszukaj</small></button></div>
+                                    <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
+                                                <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
+                                            </svg><small class="d-block mt-1">Filtruj</small></button></div>
+                                    <div class="col"><button class="btn btn-sm w-100 py-2" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-circle-fill fs--xlarge">
+                                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                                            </svg><small class="d-block mt-1">Dodaj</small></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal__menu">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-header border-0 position-relative"><button class="btn-close position-absolute top-0 end-0 p-3 m-0" type="button" aria-label="Close" data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body p-0">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="d-block">Stan magazynowy</span></li>
+                            <li class="list-group-item"><span class="d-block">Produkty</span>
+                                <ul class="list-unstyled small ps-3">
+                                    <li>Archiwalne</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><span class="d-block">Półprodukty</span></li>
+                            <li class="list-group-item"><span class="d-block">Surowce</span></li>
+                            <li class="list-group-item"><span class="d-block">Opakowania</span></li>
+                            <li class="list-group-item"><span class="d-block">Chemia</span></li>
+                            <li class="list-group-item"><span class="d-block">Zamówienia</span>
+                                <ul class="list-unstyled small ps-3">
+                                    <li>Nowe zamówienia</li>
+                                    <li>Oczekujące</li>
+                                    <li>W trakcie realizacji</li>
+                                    <li>Historia zamówień</li>
+                                    <li>Faktury</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item"><span class="d-block">Aktualizacja cen</span></li>
+                            <li class="list-group-item"><span class="d-block">Aukcje</span>
+                                <ul class="list-unstyled small ps-3">
+                                    <li>Lista aukcji</li>
+                                    <li>Wystaw nową aukcję</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom/libs/jquery.fancybox.js"></script>
+    <script src="assets/js/custom/libs/flickity.pkgd.min.js"></script>
+    <script src="assets/js/custom/libs/masonry.pkgd.js"></script>
+    <script src="assets/js/custom/libs/triggers/flickity.js"></script>
+    <script src="assets/js/custom/libs/triggers/masonry.js"></script>
+</body>
+
+</html>
