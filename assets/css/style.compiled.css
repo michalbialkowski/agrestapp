@@ -7463,7 +7463,7 @@ textarea.form-control-lg {
   position: static !important;
 }
 
-.position-relative, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-menu {
+.position-relative, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-menu {
   position: relative !important;
 }
 
@@ -12786,6 +12786,13 @@ body {
     max-width: calc(100vw - 225px);
   }
 }
+.app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
+  z-index: 1;
+}
+.app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer {
+  z-index: 1;
+}
+
 @media (max-width: 575.98px) {
   .list-group-item-product > .row > *:nth-child(2) {
     border-top: 1px solid var(--bs-list-group-border-color);
