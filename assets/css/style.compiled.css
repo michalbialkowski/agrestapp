@@ -7028,11 +7028,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-body-emphasis {
+.link-body-emphasis, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a {
   color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-body-emphasis:hover, .link-body-emphasis:focus {
+.link-body-emphasis:hover, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a:hover, .link-body-emphasis:focus, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a:focus {
   color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-opacity, 0.75)) !important;
   text-decoration-color: RGBA(var(--bs-emphasis-color-rgb), var(--bs-link-underline-opacity, 0.75)) !important;
 }
@@ -8641,7 +8641,7 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
-.text-decoration-none {
+.text-decoration-none, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body .list-group a {
   text-decoration: none !important;
 }
 
