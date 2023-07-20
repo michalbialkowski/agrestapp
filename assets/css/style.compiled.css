@@ -7847,7 +7847,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: inline-flex !important;
 }
 
-.d-none, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
+.d-none, .btn-group-actions > .btn *:first-child + span, .btn-group-actions > .btn > span, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
   display: none !important;
 }
 
@@ -7915,7 +7915,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   position: fixed !important;
 }
 
-.position-sticky, .table .cell-actions, .table .cell-heading {
+.position-sticky, .table .cell-actions, .table .cell-subheading, .table .cell-heading {
   position: sticky !important;
 }
 
@@ -13285,7 +13285,17 @@ html[data-nav=auctions] .list-group-menu .list-group-item[data-nav=auctions],
 html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
   border-color: var(--bs-list-group-border-color);
 }
+.btn-group-actions > .btn {
+  height: 27.8px;
+}
 .table .cell-heading {
+  width: 160px;
+  min-width: 160px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+.table .cell-subheading {
+  left: 160px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
 }
@@ -22487,11 +22497,11 @@ body.compensate-for-scrollbar {
   border-radius: 150px !important;
 }
 
-.w--160, .table .cell-heading {
+.w--160 {
   width: 160px !important;
 }
 
-.minw--160, .table .cell-heading {
+.minw--160 {
   min-width: 160px !important;
 }
 
