@@ -225,7 +225,49 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div></div>
+                                <div>
+                                    <div class="table-responsive shadow-sm">
+                                        <table class="table mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th class="position-sticky start-0">Nazwa składnika / produktu</th>
+                                                    <th>Dostępna ilość</th>
+                                                    <th>Data ważności</th>
+                                                    <th class="text-end position-sticky end-0">Akcje</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="position-sticky start-0">Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td class="text-end position-sticky end-0">Cell 4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="position-sticky start-0">Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 3</td>
+                                                    <td class="text-end position-sticky end-0">Cell 4</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <div class="row g-0 align-items-end">
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                                </svg><small class="d-block mt-1">Wyszukaj</small></button></div>
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
+                                                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
+                                                </svg><small class="d-block mt-1">Filtruj</small></button></div>
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-circle-fill fs--xlarge">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                                                </svg><small class="d-block mt-1">Dodaj</small></button></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -282,6 +324,37 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__filters">
+            <div class="offcanvas-header d-block border-bottom py-2">
+                <div class="row align-items-center">
+                    <div class="col"><span class="d-block">Filtry</span></div>
+                    <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg fs--xlarge">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                            </svg></button></div>
+                </div>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><label class="form-label d-block">Kategoria</label><select class="form-select">
+                            <option value="" selected="">Wybierz…</option>
+                            <option value="">Chemia</option>
+                            <option value="">Opakowania</option>
+                            <option value="">Surowce</option>
+                        </select></li>
+                    <li class="list-group-item"><label class="form-label d-block">Data ważności do</label><input class="form-control" type="date"></li>
+                </ul>
+            </div>
+            <div class="bg-light-subtle p-3 border-top py-2">
+                <div class="row justify-content-end">
+                    <div class="col-auto d-none">
+                        <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
+                    </div>
+                    <div class="col-auto"><button class="btn btn-primary" type="button">Filtruj</button></div>
                 </div>
             </div>
         </div>

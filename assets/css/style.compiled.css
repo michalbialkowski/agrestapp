@@ -16061,12 +16061,14 @@ body.compensate-for-scrollbar {
 
 .ms--2,
 .mx--2,
+.btn-group-actions > .btn,
 .m--2 {
   margin-left: 2px !important;
 }
 
 .me--2,
 .mx--2,
+.btn-group-actions > .btn,
 .m--2 {
   margin-right: 2px !important;
 }
@@ -16085,12 +16087,14 @@ body.compensate-for-scrollbar {
 
 .ms--n2,
 .mx--n2,
+.btn-group-actions,
 .m--n2 {
   margin-left: -2px !important;
 }
 
 .me--n2,
 .mx--n2,
+.btn-group-actions,
 .m--n2 {
   margin-right: -2px !important;
 }
