@@ -233,44 +233,74 @@
                             </div>
                             <div class="card-body">
                                 <div>
-                                    <div class="table-responsive shadow-sm">
-                                        <table class="table mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Online</th>
-                                                    <th class="position-sticky start-0">Nazwa</th>
-                                                    <th>Ostatnie logowanie</th>
-                                                    <th>Rola</th>
-                                                    <th>Uprawnienia</th>
-                                                    <th>Zablokowana edycja</th>
-                                                    <th class="text-end position-sticky end-0">Akcje</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Cell 1</td>
-                                                    <td class="position-sticky start-0">Cell 2</td>
-                                                    <td>Cell 3</td>
-                                                    <td>Cell 5</td>
-                                                    <td>Cell 5</td>
-                                                    <td>Cell 6</td>
-                                                    <td class="text-end position-sticky end-0">
-                                                        <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button">Przejmij</button><button class="btn btn-primary" type="button">Edytuj</button><button class="btn btn-danger" type="button">Usuń</button></div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cell 3</td>
-                                                    <td class="position-sticky start-0">Cell 4</td>
-                                                    <td>Cell 3</td>
-                                                    <td>Cell 5</td>
-                                                    <td>Cell 5</td>
-                                                    <td>Cell 6</td>
-                                                    <td class="text-end position-sticky end-0">
-                                                        <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button">Przejmij</button><button class="btn btn-primary" type="button">Edytuj</button><button class="btn btn-danger" type="button">Usuń</button></div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="card">
+                                        <div class="table-responsive">
+                                            <table class="table mb-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Online</th>
+                                                        <th class="position-sticky start-0">Nazwa</th>
+                                                        <th>Ostatnie logowanie</th>
+                                                        <th>Rola</th>
+                                                        <th>Uprawnienia</th>
+                                                        <th>Zablokowana edycja</th>
+                                                        <th class="text-end position-sticky end-0">Akcje</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="align-middle">
+                                                    <tr>
+                                                        <td>Cell 1</td>
+                                                        <td class="position-sticky start-0">Cell 2</td>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 5</td>
+                                                        <td>Cell 5</td>
+                                                        <td>Cell 6</td>
+                                                        <td class="text-end position-sticky end-0">
+                                                            <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
+                                                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+                                                                    </svg><span>Przejmij</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                    </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                    </svg><span>Usuń</span></button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Cell 3</td>
+                                                        <td class="position-sticky start-0">Cell 4</td>
+                                                        <td>Cell 3</td>
+                                                        <td>Cell 5</td>
+                                                        <td>Cell 5</td>
+                                                        <td>Cell 6</td>
+                                                        <td class="text-end position-sticky end-0">
+                                                            <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person">
+                                                                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+                                                                    </svg><span>Przejmij</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                    </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                    </svg><span>Usuń</span></button></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer border-0">
+                                            <div class="row justify-content-between align-items-center">
+                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
+                                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                                                        </svg><span>Poprzednie</span></button></div>
+                                                <div class="col-auto"></div>
+                                                <div class="col-auto d-none">
+                                                    <div class="input-group"><input class="form-control text-center w--100" type="text" value="1"><span class="input-group-text">z 21 stron / 252 elementów</span></div>
+                                                </div>
+                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
+                                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                                                        </svg></button></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
