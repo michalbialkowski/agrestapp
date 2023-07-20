@@ -3326,12 +3326,30 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, html[data-nav=storages] .btn[data-nav=storages],
+html[data-nav=products] .btn[data-nav=products],
+html[data-nav=products-half] .btn[data-nav=products-half],
+html[data-nav=materials] .btn[data-nav=materials],
+html[data-nav=packaging] .btn[data-nav=packaging],
+html[data-nav=chemicals] .btn[data-nav=chemicals],
+html[data-nav=orders] .btn[data-nav=orders],
+html[data-nav=updates] .btn[data-nav=updates],
+html[data-nav=auctions] .btn[data-nav=auctions],
+html[data-nav=addons] .btn[data-nav=addons], .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
+.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, html[data-nav=storages] .btn[data-nav=storages]:focus-visible,
+html[data-nav=products] .btn[data-nav=products]:focus-visible,
+html[data-nav=products-half] .btn[data-nav=products-half]:focus-visible,
+html[data-nav=materials] .btn[data-nav=materials]:focus-visible,
+html[data-nav=packaging] .btn[data-nav=packaging]:focus-visible,
+html[data-nav=chemicals] .btn[data-nav=chemicals]:focus-visible,
+html[data-nav=orders] .btn[data-nav=orders]:focus-visible,
+html[data-nav=updates] .btn[data-nav=updates]:focus-visible,
+html[data-nav=auctions] .btn[data-nav=auctions]:focus-visible,
+html[data-nav=addons] .btn[data-nav=addons]:focus-visible, .btn.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
@@ -3957,7 +3975,16 @@ textarea.form-control-lg {
   color: var(--bs-dropdown-link-hover-color);
   background-color: var(--bs-dropdown-link-hover-bg);
 }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active, html[data-nav=storages] .dropdown-item[data-nav=storages],
+html[data-nav=products] .dropdown-item[data-nav=products],
+html[data-nav=products-half] .dropdown-item[data-nav=products-half],
+html[data-nav=materials] .dropdown-item[data-nav=materials],
+html[data-nav=packaging] .dropdown-item[data-nav=packaging],
+html[data-nav=chemicals] .dropdown-item[data-nav=chemicals],
+html[data-nav=orders] .dropdown-item[data-nav=orders],
+html[data-nav=updates] .dropdown-item[data-nav=updates],
+html[data-nav=auctions] .dropdown-item[data-nav=auctions],
+html[data-nav=addons] .dropdown-item[data-nav=addons], .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
   text-decoration: none;
   background-color: var(--bs-dropdown-link-active-bg);
@@ -4019,12 +4046,32 @@ textarea.form-control-lg {
 .btn-group > .btn:focus,
 .btn-group > .btn:active,
 .btn-group > .btn.active,
+html[data-nav=storages] .btn-group > .btn[data-nav=storages],
+html[data-nav=products] .btn-group > .btn[data-nav=products],
+html[data-nav=products-half] .btn-group > .btn[data-nav=products-half],
+html[data-nav=materials] .btn-group > .btn[data-nav=materials],
+html[data-nav=packaging] .btn-group > .btn[data-nav=packaging],
+html[data-nav=chemicals] .btn-group > .btn[data-nav=chemicals],
+html[data-nav=orders] .btn-group > .btn[data-nav=orders],
+html[data-nav=updates] .btn-group > .btn[data-nav=updates],
+html[data-nav=auctions] .btn-group > .btn[data-nav=auctions],
+html[data-nav=addons] .btn-group > .btn[data-nav=addons],
 .btn-group-vertical > .btn-check:checked + .btn,
 .btn-group-vertical > .btn-check:focus + .btn,
 .btn-group-vertical > .btn:hover,
 .btn-group-vertical > .btn:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.btn-group-vertical > .btn.active,
+html[data-nav=storages] .btn-group-vertical > .btn[data-nav=storages],
+html[data-nav=products] .btn-group-vertical > .btn[data-nav=products],
+html[data-nav=products-half] .btn-group-vertical > .btn[data-nav=products-half],
+html[data-nav=materials] .btn-group-vertical > .btn[data-nav=materials],
+html[data-nav=packaging] .btn-group-vertical > .btn[data-nav=packaging],
+html[data-nav=chemicals] .btn-group-vertical > .btn[data-nav=chemicals],
+html[data-nav=orders] .btn-group-vertical > .btn[data-nav=orders],
+html[data-nav=updates] .btn-group-vertical > .btn[data-nav=updates],
+html[data-nav=auctions] .btn-group-vertical > .btn[data-nav=auctions],
+html[data-nav=addons] .btn-group-vertical > .btn[data-nav=addons] {
   z-index: 1;
 }
 
@@ -4141,7 +4188,25 @@ textarea.form-control-lg {
   background-color: transparent;
   border-color: transparent;
 }
-.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active, .nav-tabs html[data-nav=storages] .nav-link[data-nav=storages], html[data-nav=storages] .nav-tabs .nav-link[data-nav=storages],
+.nav-tabs html[data-nav=products] .nav-link[data-nav=products],
+html[data-nav=products] .nav-tabs .nav-link[data-nav=products],
+.nav-tabs html[data-nav=products-half] .nav-link[data-nav=products-half],
+html[data-nav=products-half] .nav-tabs .nav-link[data-nav=products-half],
+.nav-tabs html[data-nav=materials] .nav-link[data-nav=materials],
+html[data-nav=materials] .nav-tabs .nav-link[data-nav=materials],
+.nav-tabs html[data-nav=packaging] .nav-link[data-nav=packaging],
+html[data-nav=packaging] .nav-tabs .nav-link[data-nav=packaging],
+.nav-tabs html[data-nav=chemicals] .nav-link[data-nav=chemicals],
+html[data-nav=chemicals] .nav-tabs .nav-link[data-nav=chemicals],
+.nav-tabs html[data-nav=orders] .nav-link[data-nav=orders],
+html[data-nav=orders] .nav-tabs .nav-link[data-nav=orders],
+.nav-tabs html[data-nav=updates] .nav-link[data-nav=updates],
+html[data-nav=updates] .nav-tabs .nav-link[data-nav=updates],
+.nav-tabs html[data-nav=auctions] .nav-link[data-nav=auctions],
+html[data-nav=auctions] .nav-tabs .nav-link[data-nav=auctions],
+.nav-tabs html[data-nav=addons] .nav-link[data-nav=addons],
+html[data-nav=addons] .nav-tabs .nav-link[data-nav=addons],
 .nav-tabs .nav-item.show .nav-link {
   color: var(--bs-nav-tabs-link-active-color);
   background-color: var(--bs-nav-tabs-link-active-bg);
@@ -4161,7 +4226,25 @@ textarea.form-control-lg {
   background-color: transparent;
   border-color: transparent;
 }
-.nav-pills .nav-link.active,
+.nav-pills .nav-link.active, .nav-pills html[data-nav=storages] .nav-link[data-nav=storages], html[data-nav=storages] .nav-pills .nav-link[data-nav=storages],
+.nav-pills html[data-nav=products] .nav-link[data-nav=products],
+html[data-nav=products] .nav-pills .nav-link[data-nav=products],
+.nav-pills html[data-nav=products-half] .nav-link[data-nav=products-half],
+html[data-nav=products-half] .nav-pills .nav-link[data-nav=products-half],
+.nav-pills html[data-nav=materials] .nav-link[data-nav=materials],
+html[data-nav=materials] .nav-pills .nav-link[data-nav=materials],
+.nav-pills html[data-nav=packaging] .nav-link[data-nav=packaging],
+html[data-nav=packaging] .nav-pills .nav-link[data-nav=packaging],
+.nav-pills html[data-nav=chemicals] .nav-link[data-nav=chemicals],
+html[data-nav=chemicals] .nav-pills .nav-link[data-nav=chemicals],
+.nav-pills html[data-nav=orders] .nav-link[data-nav=orders],
+html[data-nav=orders] .nav-pills .nav-link[data-nav=orders],
+.nav-pills html[data-nav=updates] .nav-link[data-nav=updates],
+html[data-nav=updates] .nav-pills .nav-link[data-nav=updates],
+.nav-pills html[data-nav=auctions] .nav-link[data-nav=auctions],
+html[data-nav=auctions] .nav-pills .nav-link[data-nav=auctions],
+.nav-pills html[data-nav=addons] .nav-link[data-nav=addons],
+html[data-nav=addons] .nav-pills .nav-link[data-nav=addons],
 .nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--bs-nav-pills-link-active-bg);
@@ -4181,7 +4264,25 @@ textarea.form-control-lg {
 .nav-underline .nav-link:hover, .nav-underline .nav-link:focus {
   border-bottom-color: currentcolor;
 }
-.nav-underline .nav-link.active,
+.nav-underline .nav-link.active, .nav-underline html[data-nav=storages] .nav-link[data-nav=storages], html[data-nav=storages] .nav-underline .nav-link[data-nav=storages],
+.nav-underline html[data-nav=products] .nav-link[data-nav=products],
+html[data-nav=products] .nav-underline .nav-link[data-nav=products],
+.nav-underline html[data-nav=products-half] .nav-link[data-nav=products-half],
+html[data-nav=products-half] .nav-underline .nav-link[data-nav=products-half],
+.nav-underline html[data-nav=materials] .nav-link[data-nav=materials],
+html[data-nav=materials] .nav-underline .nav-link[data-nav=materials],
+.nav-underline html[data-nav=packaging] .nav-link[data-nav=packaging],
+html[data-nav=packaging] .nav-underline .nav-link[data-nav=packaging],
+.nav-underline html[data-nav=chemicals] .nav-link[data-nav=chemicals],
+html[data-nav=chemicals] .nav-underline .nav-link[data-nav=chemicals],
+.nav-underline html[data-nav=orders] .nav-link[data-nav=orders],
+html[data-nav=orders] .nav-underline .nav-link[data-nav=orders],
+.nav-underline html[data-nav=updates] .nav-link[data-nav=updates],
+html[data-nav=updates] .nav-underline .nav-link[data-nav=updates],
+.nav-underline html[data-nav=auctions] .nav-link[data-nav=auctions],
+html[data-nav=auctions] .nav-underline .nav-link[data-nav=auctions],
+.nav-underline html[data-nav=addons] .nav-link[data-nav=addons],
+html[data-nav=addons] .nav-underline .nav-link[data-nav=addons],
 .nav-underline .show > .nav-link {
   font-weight: 700;
   color: var(--bs-nav-underline-link-active-color);
@@ -4209,7 +4310,16 @@ textarea.form-control-lg {
 .tab-content > .tab-pane {
   display: none;
 }
-.tab-content > .active {
+.tab-content > .active, html[data-nav=storages] .tab-content > [data-nav=storages],
+html[data-nav=products] .tab-content > [data-nav=products],
+html[data-nav=products-half] .tab-content > [data-nav=products-half],
+html[data-nav=materials] .tab-content > [data-nav=materials],
+html[data-nav=packaging] .tab-content > [data-nav=packaging],
+html[data-nav=chemicals] .tab-content > [data-nav=chemicals],
+html[data-nav=orders] .tab-content > [data-nav=orders],
+html[data-nav=updates] .tab-content > [data-nav=updates],
+html[data-nav=auctions] .tab-content > [data-nav=auctions],
+html[data-nav=addons] .tab-content > [data-nav=addons] {
   display: block;
 }
 
@@ -4279,7 +4389,25 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
 }
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active, .navbar-nav html[data-nav=storages] .nav-link[data-nav=storages], html[data-nav=storages] .navbar-nav .nav-link[data-nav=storages],
+.navbar-nav html[data-nav=products] .nav-link[data-nav=products],
+html[data-nav=products] .navbar-nav .nav-link[data-nav=products],
+.navbar-nav html[data-nav=products-half] .nav-link[data-nav=products-half],
+html[data-nav=products-half] .navbar-nav .nav-link[data-nav=products-half],
+.navbar-nav html[data-nav=materials] .nav-link[data-nav=materials],
+html[data-nav=materials] .navbar-nav .nav-link[data-nav=materials],
+.navbar-nav html[data-nav=packaging] .nav-link[data-nav=packaging],
+html[data-nav=packaging] .navbar-nav .nav-link[data-nav=packaging],
+.navbar-nav html[data-nav=chemicals] .nav-link[data-nav=chemicals],
+html[data-nav=chemicals] .navbar-nav .nav-link[data-nav=chemicals],
+.navbar-nav html[data-nav=orders] .nav-link[data-nav=orders],
+html[data-nav=orders] .navbar-nav .nav-link[data-nav=orders],
+.navbar-nav html[data-nav=updates] .nav-link[data-nav=updates],
+html[data-nav=updates] .navbar-nav .nav-link[data-nav=updates],
+.navbar-nav html[data-nav=auctions] .nav-link[data-nav=auctions],
+html[data-nav=auctions] .navbar-nav .nav-link[data-nav=auctions],
+.navbar-nav html[data-nav=addons] .nav-link[data-nav=addons],
+html[data-nav=addons] .navbar-nav .nav-link[data-nav=addons], .navbar-nav .nav-link.show {
   color: var(--bs-navbar-active-color);
 }
 .navbar-nav .dropdown-menu {
@@ -4733,7 +4861,25 @@ textarea.form-control-lg {
   margin-left: calc(-0.5 * var(--bs-card-cap-padding-x));
   border-bottom: 0;
 }
-.card-header-tabs .nav-link.active {
+.card-header-tabs .nav-link.active, .card-header-tabs html[data-nav=storages] .nav-link[data-nav=storages], html[data-nav=storages] .card-header-tabs .nav-link[data-nav=storages],
+.card-header-tabs html[data-nav=products] .nav-link[data-nav=products],
+html[data-nav=products] .card-header-tabs .nav-link[data-nav=products],
+.card-header-tabs html[data-nav=products-half] .nav-link[data-nav=products-half],
+html[data-nav=products-half] .card-header-tabs .nav-link[data-nav=products-half],
+.card-header-tabs html[data-nav=materials] .nav-link[data-nav=materials],
+html[data-nav=materials] .card-header-tabs .nav-link[data-nav=materials],
+.card-header-tabs html[data-nav=packaging] .nav-link[data-nav=packaging],
+html[data-nav=packaging] .card-header-tabs .nav-link[data-nav=packaging],
+.card-header-tabs html[data-nav=chemicals] .nav-link[data-nav=chemicals],
+html[data-nav=chemicals] .card-header-tabs .nav-link[data-nav=chemicals],
+.card-header-tabs html[data-nav=orders] .nav-link[data-nav=orders],
+html[data-nav=orders] .card-header-tabs .nav-link[data-nav=orders],
+.card-header-tabs html[data-nav=updates] .nav-link[data-nav=updates],
+html[data-nav=updates] .card-header-tabs .nav-link[data-nav=updates],
+.card-header-tabs html[data-nav=auctions] .nav-link[data-nav=auctions],
+html[data-nav=auctions] .card-header-tabs .nav-link[data-nav=auctions],
+.card-header-tabs html[data-nav=addons] .nav-link[data-nav=addons],
+html[data-nav=addons] .card-header-tabs .nav-link[data-nav=addons] {
   background-color: var(--bs-card-bg);
   border-bottom-color: var(--bs-card-bg);
 }
@@ -4916,7 +5062,16 @@ textarea.form-control-lg {
   color: var(--bs-breadcrumb-divider-color);
   content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */;
 }
-.breadcrumb-item.active {
+.breadcrumb-item.active, html[data-nav=storages] .breadcrumb-item[data-nav=storages],
+html[data-nav=products] .breadcrumb-item[data-nav=products],
+html[data-nav=products-half] .breadcrumb-item[data-nav=products-half],
+html[data-nav=materials] .breadcrumb-item[data-nav=materials],
+html[data-nav=packaging] .breadcrumb-item[data-nav=packaging],
+html[data-nav=chemicals] .breadcrumb-item[data-nav=chemicals],
+html[data-nav=orders] .breadcrumb-item[data-nav=orders],
+html[data-nav=updates] .breadcrumb-item[data-nav=updates],
+html[data-nav=auctions] .breadcrumb-item[data-nav=auctions],
+html[data-nav=addons] .breadcrumb-item[data-nav=addons] {
   color: var(--bs-breadcrumb-item-active-color);
 }
 
@@ -4975,7 +5130,25 @@ textarea.form-control-lg {
   outline: 0;
   box-shadow: var(--bs-pagination-focus-box-shadow);
 }
-.page-link.active, .active > .page-link {
+.page-link.active, html[data-nav=storages] .page-link[data-nav=storages],
+html[data-nav=products] .page-link[data-nav=products],
+html[data-nav=products-half] .page-link[data-nav=products-half],
+html[data-nav=materials] .page-link[data-nav=materials],
+html[data-nav=packaging] .page-link[data-nav=packaging],
+html[data-nav=chemicals] .page-link[data-nav=chemicals],
+html[data-nav=orders] .page-link[data-nav=orders],
+html[data-nav=updates] .page-link[data-nav=updates],
+html[data-nav=auctions] .page-link[data-nav=auctions],
+html[data-nav=addons] .page-link[data-nav=addons], .active > .page-link, html[data-nav=storages] [data-nav=storages] > .page-link,
+html[data-nav=products] [data-nav=products] > .page-link,
+html[data-nav=products-half] [data-nav=products-half] > .page-link,
+html[data-nav=materials] [data-nav=materials] > .page-link,
+html[data-nav=packaging] [data-nav=packaging] > .page-link,
+html[data-nav=chemicals] [data-nav=chemicals] > .page-link,
+html[data-nav=orders] [data-nav=orders] > .page-link,
+html[data-nav=updates] [data-nav=updates] > .page-link,
+html[data-nav=auctions] [data-nav=auctions] > .page-link,
+html[data-nav=addons] [data-nav=addons] > .page-link {
   z-index: 3;
   color: var(--bs-pagination-active-color);
   background-color: var(--bs-pagination-active-bg);
@@ -5249,7 +5422,16 @@ textarea.form-control-lg {
   pointer-events: none;
   background-color: var(--bs-list-group-disabled-bg);
 }
-.list-group-item.active {
+.list-group-item.active, html[data-nav=storages] .list-group-item[data-nav=storages],
+html[data-nav=products] .list-group-item[data-nav=products],
+html[data-nav=products-half] .list-group-item[data-nav=products-half],
+html[data-nav=materials] .list-group-item[data-nav=materials],
+html[data-nav=packaging] .list-group-item[data-nav=packaging],
+html[data-nav=chemicals] .list-group-item[data-nav=chemicals],
+html[data-nav=orders] .list-group-item[data-nav=orders],
+html[data-nav=updates] .list-group-item[data-nav=updates],
+html[data-nav=auctions] .list-group-item[data-nav=auctions],
+html[data-nav=addons] .list-group-item[data-nav=addons] {
   z-index: 2;
   color: var(--bs-list-group-active-color);
   background-color: var(--bs-list-group-active-bg);
@@ -5258,7 +5440,16 @@ textarea.form-control-lg {
 .list-group-item + .list-group-item {
   border-top-width: 0;
 }
-.list-group-item + .list-group-item.active {
+.list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-item + .list-group-item[data-nav=storages],
+html[data-nav=products] .list-group-item + .list-group-item[data-nav=products],
+html[data-nav=products-half] .list-group-item + .list-group-item[data-nav=products-half],
+html[data-nav=materials] .list-group-item + .list-group-item[data-nav=materials],
+html[data-nav=packaging] .list-group-item + .list-group-item[data-nav=packaging],
+html[data-nav=chemicals] .list-group-item + .list-group-item[data-nav=chemicals],
+html[data-nav=orders] .list-group-item + .list-group-item[data-nav=orders],
+html[data-nav=updates] .list-group-item + .list-group-item[data-nav=updates],
+html[data-nav=auctions] .list-group-item + .list-group-item[data-nav=auctions],
+html[data-nav=addons] .list-group-item + .list-group-item[data-nav=addons] {
   margin-top: calc(-1 * var(--bs-list-group-border-width));
   border-top-width: var(--bs-list-group-border-width);
 }
@@ -5266,14 +5457,32 @@ textarea.form-control-lg {
 .list-group-horizontal {
   flex-direction: row;
 }
-.list-group-horizontal > .list-group-item.active {
+.list-group-horizontal > .list-group-item.active, html[data-nav=storages] .list-group-horizontal > .list-group-item[data-nav=storages],
+html[data-nav=products] .list-group-horizontal > .list-group-item[data-nav=products],
+html[data-nav=products-half] .list-group-horizontal > .list-group-item[data-nav=products-half],
+html[data-nav=materials] .list-group-horizontal > .list-group-item[data-nav=materials],
+html[data-nav=packaging] .list-group-horizontal > .list-group-item[data-nav=packaging],
+html[data-nav=chemicals] .list-group-horizontal > .list-group-item[data-nav=chemicals],
+html[data-nav=orders] .list-group-horizontal > .list-group-item[data-nav=orders],
+html[data-nav=updates] .list-group-horizontal > .list-group-item[data-nav=updates],
+html[data-nav=auctions] .list-group-horizontal > .list-group-item[data-nav=auctions],
+html[data-nav=addons] .list-group-horizontal > .list-group-item[data-nav=addons] {
   margin-top: 0;
 }
 .list-group-horizontal > .list-group-item + .list-group-item {
   border-top-width: var(--bs-list-group-border-width);
   border-left-width: 0;
 }
-.list-group-horizontal > .list-group-item + .list-group-item.active {
+.list-group-horizontal > .list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=storages],
+html[data-nav=products] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=products],
+html[data-nav=products-half] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=products-half],
+html[data-nav=materials] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=materials],
+html[data-nav=packaging] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=packaging],
+html[data-nav=chemicals] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=chemicals],
+html[data-nav=orders] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=orders],
+html[data-nav=updates] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=updates],
+html[data-nav=auctions] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=auctions],
+html[data-nav=addons] .list-group-horizontal > .list-group-item + .list-group-item[data-nav=addons] {
   margin-left: calc(-1 * var(--bs-list-group-border-width));
   border-left-width: var(--bs-list-group-border-width);
 }
@@ -5282,14 +5491,32 @@ textarea.form-control-lg {
   .list-group-horizontal-sm {
     flex-direction: row;
   }
-  .list-group-horizontal-sm > .list-group-item.active {
+  .list-group-horizontal-sm > .list-group-item.active, html[data-nav=storages] .list-group-horizontal-sm > .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-sm > .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-sm > .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-sm > .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-sm > .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-sm > .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-sm > .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-sm > .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-sm > .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-sm > .list-group-item[data-nav=addons] {
     margin-top: 0;
   }
   .list-group-horizontal-sm > .list-group-item + .list-group-item {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-sm > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-sm > .list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-sm > .list-group-item + .list-group-item[data-nav=addons] {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -5298,14 +5525,32 @@ textarea.form-control-lg {
   .list-group-horizontal-md {
     flex-direction: row;
   }
-  .list-group-horizontal-md > .list-group-item.active {
+  .list-group-horizontal-md > .list-group-item.active, html[data-nav=storages] .list-group-horizontal-md > .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-md > .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-md > .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-md > .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-md > .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-md > .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-md > .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-md > .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-md > .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-md > .list-group-item[data-nav=addons] {
     margin-top: 0;
   }
   .list-group-horizontal-md > .list-group-item + .list-group-item {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-md > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-md > .list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-md > .list-group-item + .list-group-item[data-nav=addons] {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -5314,14 +5559,32 @@ textarea.form-control-lg {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
-  .list-group-horizontal-lg > .list-group-item.active {
+  .list-group-horizontal-lg > .list-group-item.active, html[data-nav=storages] .list-group-horizontal-lg > .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-lg > .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-lg > .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-lg > .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-lg > .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-lg > .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-lg > .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-lg > .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-lg > .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-lg > .list-group-item[data-nav=addons] {
     margin-top: 0;
   }
   .list-group-horizontal-lg > .list-group-item + .list-group-item {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-lg > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-lg > .list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-lg > .list-group-item + .list-group-item[data-nav=addons] {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -5330,14 +5593,32 @@ textarea.form-control-lg {
   .list-group-horizontal-xl {
     flex-direction: row;
   }
-  .list-group-horizontal-xl > .list-group-item.active {
+  .list-group-horizontal-xl > .list-group-item.active, html[data-nav=storages] .list-group-horizontal-xl > .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-xl > .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-xl > .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-xl > .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-xl > .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-xl > .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-xl > .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-xl > .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-xl > .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-xl > .list-group-item[data-nav=addons] {
     margin-top: 0;
   }
   .list-group-horizontal-xl > .list-group-item + .list-group-item {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-xl > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-xl > .list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-xl > .list-group-item + .list-group-item[data-nav=addons] {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -5346,14 +5627,32 @@ textarea.form-control-lg {
   .list-group-horizontal-xxl {
     flex-direction: row;
   }
-  .list-group-horizontal-xxl > .list-group-item.active {
+  .list-group-horizontal-xxl > .list-group-item.active, html[data-nav=storages] .list-group-horizontal-xxl > .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-xxl > .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-xxl > .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-xxl > .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-xxl > .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-xxl > .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-xxl > .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-xxl > .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-xxl > .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-xxl > .list-group-item[data-nav=addons] {
     margin-top: 0;
   }
   .list-group-horizontal-xxl > .list-group-item + .list-group-item {
     border-top-width: var(--bs-list-group-border-width);
     border-left-width: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item + .list-group-item.active {
+  .list-group-horizontal-xxl > .list-group-item + .list-group-item.active, html[data-nav=storages] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=storages],
+  html[data-nav=products] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=products],
+  html[data-nav=products-half] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=products-half],
+  html[data-nav=materials] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=materials],
+  html[data-nav=packaging] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=packaging],
+  html[data-nav=chemicals] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=chemicals],
+  html[data-nav=orders] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=orders],
+  html[data-nav=updates] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=updates],
+  html[data-nav=auctions] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=auctions],
+  html[data-nav=addons] .list-group-horizontal-xxl > .list-group-item + .list-group-item[data-nav=addons] {
     margin-left: calc(-1 * var(--bs-list-group-border-width));
     border-left-width: var(--bs-list-group-border-width);
   }
@@ -6120,19 +6419,48 @@ textarea.form-control-lg {
   }
 }
 
-.carousel-item.active,
+.carousel-item.active, html[data-nav=storages] .carousel-item[data-nav=storages],
+html[data-nav=products] .carousel-item[data-nav=products],
+html[data-nav=products-half] .carousel-item[data-nav=products-half],
+html[data-nav=materials] .carousel-item[data-nav=materials],
+html[data-nav=packaging] .carousel-item[data-nav=packaging],
+html[data-nav=chemicals] .carousel-item[data-nav=chemicals],
+html[data-nav=orders] .carousel-item[data-nav=orders],
+html[data-nav=updates] .carousel-item[data-nav=updates],
+html[data-nav=auctions] .carousel-item[data-nav=auctions],
+html[data-nav=addons] .carousel-item[data-nav=addons],
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
 }
 
 .carousel-item-next:not(.carousel-item-start),
-.active.carousel-item-end {
+.active.carousel-item-end,
+html[data-nav=storages] .carousel-item-end[data-nav=storages],
+html[data-nav=products] .carousel-item-end[data-nav=products],
+html[data-nav=products-half] .carousel-item-end[data-nav=products-half],
+html[data-nav=materials] .carousel-item-end[data-nav=materials],
+html[data-nav=packaging] .carousel-item-end[data-nav=packaging],
+html[data-nav=chemicals] .carousel-item-end[data-nav=chemicals],
+html[data-nav=orders] .carousel-item-end[data-nav=orders],
+html[data-nav=updates] .carousel-item-end[data-nav=updates],
+html[data-nav=auctions] .carousel-item-end[data-nav=auctions],
+html[data-nav=addons] .carousel-item-end[data-nav=addons] {
   transform: translateX(100%);
 }
 
 .carousel-item-prev:not(.carousel-item-end),
-.active.carousel-item-start {
+.active.carousel-item-start,
+html[data-nav=storages] .carousel-item-start[data-nav=storages],
+html[data-nav=products] .carousel-item-start[data-nav=products],
+html[data-nav=products-half] .carousel-item-start[data-nav=products-half],
+html[data-nav=materials] .carousel-item-start[data-nav=materials],
+html[data-nav=packaging] .carousel-item-start[data-nav=packaging],
+html[data-nav=chemicals] .carousel-item-start[data-nav=chemicals],
+html[data-nav=orders] .carousel-item-start[data-nav=orders],
+html[data-nav=updates] .carousel-item-start[data-nav=updates],
+html[data-nav=auctions] .carousel-item-start[data-nav=auctions],
+html[data-nav=addons] .carousel-item-start[data-nav=addons] {
   transform: translateX(-100%);
 }
 
@@ -6141,21 +6469,115 @@ textarea.form-control-lg {
   transition-property: opacity;
   transform: none;
 }
-.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item.active, .carousel-fade html[data-nav=storages] .carousel-item[data-nav=storages], html[data-nav=storages] .carousel-fade .carousel-item[data-nav=storages],
+.carousel-fade html[data-nav=products] .carousel-item[data-nav=products],
+html[data-nav=products] .carousel-fade .carousel-item[data-nav=products],
+.carousel-fade html[data-nav=products-half] .carousel-item[data-nav=products-half],
+html[data-nav=products-half] .carousel-fade .carousel-item[data-nav=products-half],
+.carousel-fade html[data-nav=materials] .carousel-item[data-nav=materials],
+html[data-nav=materials] .carousel-fade .carousel-item[data-nav=materials],
+.carousel-fade html[data-nav=packaging] .carousel-item[data-nav=packaging],
+html[data-nav=packaging] .carousel-fade .carousel-item[data-nav=packaging],
+.carousel-fade html[data-nav=chemicals] .carousel-item[data-nav=chemicals],
+html[data-nav=chemicals] .carousel-fade .carousel-item[data-nav=chemicals],
+.carousel-fade html[data-nav=orders] .carousel-item[data-nav=orders],
+html[data-nav=orders] .carousel-fade .carousel-item[data-nav=orders],
+.carousel-fade html[data-nav=updates] .carousel-item[data-nav=updates],
+html[data-nav=updates] .carousel-fade .carousel-item[data-nav=updates],
+.carousel-fade html[data-nav=auctions] .carousel-item[data-nav=auctions],
+html[data-nav=auctions] .carousel-fade .carousel-item[data-nav=auctions],
+.carousel-fade html[data-nav=addons] .carousel-item[data-nav=addons],
+html[data-nav=addons] .carousel-fade .carousel-item[data-nav=addons],
 .carousel-fade .carousel-item-next.carousel-item-start,
 .carousel-fade .carousel-item-prev.carousel-item-end {
   z-index: 1;
   opacity: 1;
 }
-.carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
+.carousel-fade .active.carousel-item-start, .carousel-fade html[data-nav=storages] .carousel-item-start[data-nav=storages], html[data-nav=storages] .carousel-fade .carousel-item-start[data-nav=storages],
+.carousel-fade html[data-nav=products] .carousel-item-start[data-nav=products],
+html[data-nav=products] .carousel-fade .carousel-item-start[data-nav=products],
+.carousel-fade html[data-nav=products-half] .carousel-item-start[data-nav=products-half],
+html[data-nav=products-half] .carousel-fade .carousel-item-start[data-nav=products-half],
+.carousel-fade html[data-nav=materials] .carousel-item-start[data-nav=materials],
+html[data-nav=materials] .carousel-fade .carousel-item-start[data-nav=materials],
+.carousel-fade html[data-nav=packaging] .carousel-item-start[data-nav=packaging],
+html[data-nav=packaging] .carousel-fade .carousel-item-start[data-nav=packaging],
+.carousel-fade html[data-nav=chemicals] .carousel-item-start[data-nav=chemicals],
+html[data-nav=chemicals] .carousel-fade .carousel-item-start[data-nav=chemicals],
+.carousel-fade html[data-nav=orders] .carousel-item-start[data-nav=orders],
+html[data-nav=orders] .carousel-fade .carousel-item-start[data-nav=orders],
+.carousel-fade html[data-nav=updates] .carousel-item-start[data-nav=updates],
+html[data-nav=updates] .carousel-fade .carousel-item-start[data-nav=updates],
+.carousel-fade html[data-nav=auctions] .carousel-item-start[data-nav=auctions],
+html[data-nav=auctions] .carousel-fade .carousel-item-start[data-nav=auctions],
+.carousel-fade html[data-nav=addons] .carousel-item-start[data-nav=addons],
+html[data-nav=addons] .carousel-fade .carousel-item-start[data-nav=addons],
+.carousel-fade .active.carousel-item-end,
+.carousel-fade html[data-nav=storages] .carousel-item-end[data-nav=storages],
+html[data-nav=storages] .carousel-fade .carousel-item-end[data-nav=storages],
+.carousel-fade html[data-nav=products] .carousel-item-end[data-nav=products],
+html[data-nav=products] .carousel-fade .carousel-item-end[data-nav=products],
+.carousel-fade html[data-nav=products-half] .carousel-item-end[data-nav=products-half],
+html[data-nav=products-half] .carousel-fade .carousel-item-end[data-nav=products-half],
+.carousel-fade html[data-nav=materials] .carousel-item-end[data-nav=materials],
+html[data-nav=materials] .carousel-fade .carousel-item-end[data-nav=materials],
+.carousel-fade html[data-nav=packaging] .carousel-item-end[data-nav=packaging],
+html[data-nav=packaging] .carousel-fade .carousel-item-end[data-nav=packaging],
+.carousel-fade html[data-nav=chemicals] .carousel-item-end[data-nav=chemicals],
+html[data-nav=chemicals] .carousel-fade .carousel-item-end[data-nav=chemicals],
+.carousel-fade html[data-nav=orders] .carousel-item-end[data-nav=orders],
+html[data-nav=orders] .carousel-fade .carousel-item-end[data-nav=orders],
+.carousel-fade html[data-nav=updates] .carousel-item-end[data-nav=updates],
+html[data-nav=updates] .carousel-fade .carousel-item-end[data-nav=updates],
+.carousel-fade html[data-nav=auctions] .carousel-item-end[data-nav=auctions],
+html[data-nav=auctions] .carousel-fade .carousel-item-end[data-nav=auctions],
+.carousel-fade html[data-nav=addons] .carousel-item-end[data-nav=addons],
+html[data-nav=addons] .carousel-fade .carousel-item-end[data-nav=addons] {
   z-index: 0;
   opacity: 0;
   transition: opacity 0s 0.6s;
 }
 @media (prefers-reduced-motion: reduce) {
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
+  .carousel-fade .active.carousel-item-start, .carousel-fade html[data-nav=storages] .carousel-item-start[data-nav=storages], html[data-nav=storages] .carousel-fade .carousel-item-start[data-nav=storages],
+  .carousel-fade html[data-nav=products] .carousel-item-start[data-nav=products],
+  html[data-nav=products] .carousel-fade .carousel-item-start[data-nav=products],
+  .carousel-fade html[data-nav=products-half] .carousel-item-start[data-nav=products-half],
+  html[data-nav=products-half] .carousel-fade .carousel-item-start[data-nav=products-half],
+  .carousel-fade html[data-nav=materials] .carousel-item-start[data-nav=materials],
+  html[data-nav=materials] .carousel-fade .carousel-item-start[data-nav=materials],
+  .carousel-fade html[data-nav=packaging] .carousel-item-start[data-nav=packaging],
+  html[data-nav=packaging] .carousel-fade .carousel-item-start[data-nav=packaging],
+  .carousel-fade html[data-nav=chemicals] .carousel-item-start[data-nav=chemicals],
+  html[data-nav=chemicals] .carousel-fade .carousel-item-start[data-nav=chemicals],
+  .carousel-fade html[data-nav=orders] .carousel-item-start[data-nav=orders],
+  html[data-nav=orders] .carousel-fade .carousel-item-start[data-nav=orders],
+  .carousel-fade html[data-nav=updates] .carousel-item-start[data-nav=updates],
+  html[data-nav=updates] .carousel-fade .carousel-item-start[data-nav=updates],
+  .carousel-fade html[data-nav=auctions] .carousel-item-start[data-nav=auctions],
+  html[data-nav=auctions] .carousel-fade .carousel-item-start[data-nav=auctions],
+  .carousel-fade html[data-nav=addons] .carousel-item-start[data-nav=addons],
+  html[data-nav=addons] .carousel-fade .carousel-item-start[data-nav=addons],
+  .carousel-fade .active.carousel-item-end,
+  .carousel-fade html[data-nav=storages] .carousel-item-end[data-nav=storages],
+  html[data-nav=storages] .carousel-fade .carousel-item-end[data-nav=storages],
+  .carousel-fade html[data-nav=products] .carousel-item-end[data-nav=products],
+  html[data-nav=products] .carousel-fade .carousel-item-end[data-nav=products],
+  .carousel-fade html[data-nav=products-half] .carousel-item-end[data-nav=products-half],
+  html[data-nav=products-half] .carousel-fade .carousel-item-end[data-nav=products-half],
+  .carousel-fade html[data-nav=materials] .carousel-item-end[data-nav=materials],
+  html[data-nav=materials] .carousel-fade .carousel-item-end[data-nav=materials],
+  .carousel-fade html[data-nav=packaging] .carousel-item-end[data-nav=packaging],
+  html[data-nav=packaging] .carousel-fade .carousel-item-end[data-nav=packaging],
+  .carousel-fade html[data-nav=chemicals] .carousel-item-end[data-nav=chemicals],
+  html[data-nav=chemicals] .carousel-fade .carousel-item-end[data-nav=chemicals],
+  .carousel-fade html[data-nav=orders] .carousel-item-end[data-nav=orders],
+  html[data-nav=orders] .carousel-fade .carousel-item-end[data-nav=orders],
+  .carousel-fade html[data-nav=updates] .carousel-item-end[data-nav=updates],
+  html[data-nav=updates] .carousel-fade .carousel-item-end[data-nav=updates],
+  .carousel-fade html[data-nav=auctions] .carousel-item-end[data-nav=auctions],
+  html[data-nav=auctions] .carousel-fade .carousel-item-end[data-nav=auctions],
+  .carousel-fade html[data-nav=addons] .carousel-item-end[data-nav=addons],
+  html[data-nav=addons] .carousel-fade .carousel-item-end[data-nav=addons] {
     transition: none;
   }
 }
@@ -6263,7 +6685,25 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.carousel-indicators .active {
+.carousel-indicators .active, .carousel-indicators html[data-nav=storages] [data-nav=storages], html[data-nav=storages] .carousel-indicators [data-nav=storages],
+.carousel-indicators html[data-nav=products] [data-nav=products],
+html[data-nav=products] .carousel-indicators [data-nav=products],
+.carousel-indicators html[data-nav=products-half] [data-nav=products-half],
+html[data-nav=products-half] .carousel-indicators [data-nav=products-half],
+.carousel-indicators html[data-nav=materials] [data-nav=materials],
+html[data-nav=materials] .carousel-indicators [data-nav=materials],
+.carousel-indicators html[data-nav=packaging] [data-nav=packaging],
+html[data-nav=packaging] .carousel-indicators [data-nav=packaging],
+.carousel-indicators html[data-nav=chemicals] [data-nav=chemicals],
+html[data-nav=chemicals] .carousel-indicators [data-nav=chemicals],
+.carousel-indicators html[data-nav=orders] [data-nav=orders],
+html[data-nav=orders] .carousel-indicators [data-nav=orders],
+.carousel-indicators html[data-nav=updates] [data-nav=updates],
+html[data-nav=updates] .carousel-indicators [data-nav=updates],
+.carousel-indicators html[data-nav=auctions] [data-nav=auctions],
+html[data-nav=auctions] .carousel-indicators [data-nav=auctions],
+.carousel-indicators html[data-nav=addons] [data-nav=addons],
+html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   opacity: 1;
 }
 
@@ -9089,7 +9529,25 @@ textarea.form-control-lg {
   background-color: var(--bs-danger-bg-subtle) !important;
 }
 
-.bg-light-subtle, .list-group-menu .list-group-item.active, .app-layout > .app-layout-row > *.app-layout-col-main > .card {
+.bg-light-subtle, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
+.list-group-menu html[data-nav=products] .list-group-item[data-nav=products],
+html[data-nav=products] .list-group-menu .list-group-item[data-nav=products],
+.list-group-menu html[data-nav=products-half] .list-group-item[data-nav=products-half],
+html[data-nav=products-half] .list-group-menu .list-group-item[data-nav=products-half],
+.list-group-menu html[data-nav=materials] .list-group-item[data-nav=materials],
+html[data-nav=materials] .list-group-menu .list-group-item[data-nav=materials],
+.list-group-menu html[data-nav=packaging] .list-group-item[data-nav=packaging],
+html[data-nav=packaging] .list-group-menu .list-group-item[data-nav=packaging],
+.list-group-menu html[data-nav=chemicals] .list-group-item[data-nav=chemicals],
+html[data-nav=chemicals] .list-group-menu .list-group-item[data-nav=chemicals],
+.list-group-menu html[data-nav=orders] .list-group-item[data-nav=orders],
+html[data-nav=orders] .list-group-menu .list-group-item[data-nav=orders],
+.list-group-menu html[data-nav=updates] .list-group-item[data-nav=updates],
+html[data-nav=updates] .list-group-menu .list-group-item[data-nav=updates],
+.list-group-menu html[data-nav=auctions] .list-group-item[data-nav=auctions],
+html[data-nav=auctions] .list-group-menu .list-group-item[data-nav=auctions],
+.list-group-menu html[data-nav=addons] .list-group-item[data-nav=addons],
+html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-layout > .app-layout-row > *.app-layout-col-main > .card {
   background-color: var(--bs-light-bg-subtle) !important;
 }
 
@@ -12806,7 +13264,25 @@ body {
   }
 }
 
-.list-group-menu .list-group-item.active {
+.list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
+.list-group-menu html[data-nav=products] .list-group-item[data-nav=products],
+html[data-nav=products] .list-group-menu .list-group-item[data-nav=products],
+.list-group-menu html[data-nav=products-half] .list-group-item[data-nav=products-half],
+html[data-nav=products-half] .list-group-menu .list-group-item[data-nav=products-half],
+.list-group-menu html[data-nav=materials] .list-group-item[data-nav=materials],
+html[data-nav=materials] .list-group-menu .list-group-item[data-nav=materials],
+.list-group-menu html[data-nav=packaging] .list-group-item[data-nav=packaging],
+html[data-nav=packaging] .list-group-menu .list-group-item[data-nav=packaging],
+.list-group-menu html[data-nav=chemicals] .list-group-item[data-nav=chemicals],
+html[data-nav=chemicals] .list-group-menu .list-group-item[data-nav=chemicals],
+.list-group-menu html[data-nav=orders] .list-group-item[data-nav=orders],
+html[data-nav=orders] .list-group-menu .list-group-item[data-nav=orders],
+.list-group-menu html[data-nav=updates] .list-group-item[data-nav=updates],
+html[data-nav=updates] .list-group-menu .list-group-item[data-nav=updates],
+.list-group-menu html[data-nav=auctions] .list-group-item[data-nav=auctions],
+html[data-nav=auctions] .list-group-menu .list-group-item[data-nav=auctions],
+.list-group-menu html[data-nav=addons] .list-group-item[data-nav=addons],
+html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
   border-color: var(--bs-list-group-border-color);
 }
 /* ! Flickity v2.2.1
