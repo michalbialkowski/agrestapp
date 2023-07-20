@@ -91,7 +91,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/style.compiled.css?h=e8bad317e63ed735099d9172dbd71d18">
+    <link rel="stylesheet" href="assets/css/style.compiled.css?h=ed78a5d7a52d0d4a64c344fdac017809">
 </head>
 
 <body>
@@ -239,10 +239,10 @@
                                                         <th class="cell-heading">Produkt</th>
                                                         <th>Zysk</th>
                                                         <th>Cena sklepowa</th>
-                                                        <th>Sugerowana cena</th>
-                                                        <th>Koszt surowców</th>
-                                                        <th>Zmiana % zysku</th>
-                                                        <th>kg / szt</th>
+                                                        <th class="text-end">Sugerowana cena</th>
+                                                        <th class="text-center">Koszt surowców</th>
+                                                        <th class="text-center">Zmiana % zysku</th>
+                                                        <th class="text-center">kg / szt</th>
                                                         <th class="cell-actions">Akcje</th>
                                                     </tr>
                                                 </thead>
@@ -250,12 +250,26 @@
                                                     <tr>
                                                         <td>181</td>
                                                         <td class="cell-heading">Twój Chleb</td>
-                                                        <td>Cell 3</td>
-                                                        <td>Cell 4</td>
-                                                        <td>169.66</td>
-                                                        <td>51.96 zł / szt.</td>
-                                                        <td>-0%</td>
-                                                        <td>szt.</td>
+                                                        <td>
+                                                            <ul class="list-inline d-flex justify-content-end align-items-center flex-nowrap mb-0">
+                                                                <li class="list-inline-item"><span>-90.94</span></li>
+                                                                <li class="list-inline-item"><button class="btn btn-lg p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line">
+                                                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                                                                        </svg></button></li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="text-nowrap">
+                                                            <ul class="list-inline d-flex justify-content-end align-items-center flex-nowrap mb-0">
+                                                                <li class="list-inline-item"><span class="text-danger-emphasis bg-danger-subtle py-1 px-3 rounded-pill">4.90</span></li>
+                                                                <li class="list-inline-item"><button class="btn btn-lg p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line">
+                                                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                                                                        </svg></button></li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="text-nowrap text-end">169.66</td>
+                                                        <td class="text-nowrap text-center">51.96 zł / szt.</td>
+                                                        <td class="text-nowrap text-center">-0%</td>
+                                                        <td class="text-nowrap text-center">szt.</td>
                                                         <td class="cell-actions">
                                                             <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard">
                                                                         <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
@@ -271,14 +285,65 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Cell 3</td>
-                                                        <td class="cell-heading">Cell 4</td>
-                                                        <td>Cell 3</td>
-                                                        <td>Cell 4</td>
-                                                        <td>Cell 5</td>
-                                                        <td>Cell 6</td>
-                                                        <td>Cell 7</td>
-                                                        <td>Cell 8</td>
+                                                        <td>8</td>
+                                                        <td class="cell-heading">Chleb Rustykalny</td>
+                                                        <td>
+                                                            <ul class="list-inline d-flex justify-content-end align-items-center flex-nowrap mb-0">
+                                                                <li class="list-inline-item"><span>0.87</span></li>
+                                                                <li class="list-inline-item"><button class="btn btn-lg p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line">
+                                                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                                                                        </svg></button></li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline d-flex justify-content-end align-items-center flex-nowrap mb-0">
+                                                                <li class="list-inline-item"><span class="text-danger-emphasis bg-danger-subtle py-1 px-3 rounded-pill">9.90</span></li>
+                                                                <li class="list-inline-item"><button class="btn btn-lg p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line">
+                                                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                                                                        </svg></button></li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="text-nowrap text-end">15.19</td>
+                                                        <td class="text-nowrap text-center">4.65 zł / kg</td>
+                                                        <td class="text-nowrap text-center">0%</td>
+                                                        <td class="text-nowrap text-center">kg</td>
+                                                        <td class="cell-actions">
+                                                            <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard">
+                                                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>
+                                                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"></path>
+                                                                    </svg><span>Specyfikacja</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                    </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-archive">
+                                                                        <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"></path>
+                                                                    </svg><span>Archiwizuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                    </svg><span>Usuń</span></button></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>608</td>
+                                                        <td class="cell-heading">Placek drożdżowy Maślane</td>
+                                                        <td>
+                                                            <ul class="list-inline d-flex justify-content-end align-items-center flex-nowrap mb-0">
+                                                                <li class="list-inline-item"><span>7.49</span></li>
+                                                                <li class="list-inline-item"><button class="btn btn-lg p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line">
+                                                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                                                                        </svg></button></li>
+                                                            </ul>
+                                                        </td>
+                                                        <td>
+                                                            <ul class="list-inline d-flex justify-content-end align-items-center flex-nowrap mb-0">
+                                                                <li class="list-inline-item"><span class="text-danger-emphasis bg-danger-subtle py-1 px-3 rounded-pill">25.90</span></li>
+                                                                <li class="list-inline-item"><button class="btn btn-lg p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bar-chart-line">
+                                                                            <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
+                                                                        </svg></button></li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="text-nowrap text-end">30.48</td>
+                                                        <td class="text-nowrap text-center">9.34 zł / kg</td>
+                                                        <td class="text-nowrap text-center">0%</td>
+                                                        <td class="text-nowrap text-center">kg</td>
                                                         <td class="cell-actions">
                                                             <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clipboard">
                                                                         <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"></path>

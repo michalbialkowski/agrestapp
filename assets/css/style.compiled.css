@@ -13285,6 +13285,15 @@ html[data-nav=auctions] .list-group-menu .list-group-item[data-nav=auctions],
 html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
   border-color: var(--bs-list-group-border-color);
 }
+.table .cell-heading {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+.table .cell-actions {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
 /* ! Flickity v2.2.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -16351,7 +16360,7 @@ body.compensate-for-scrollbar {
   border-radius: 0px !important;
 }
 
-.w--1, .table .cell-actions {
+.w--1, .table .cell-index, .table .cell-actions {
   width: 1px !important;
 }
 
