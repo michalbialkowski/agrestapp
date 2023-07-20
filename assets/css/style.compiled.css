@@ -7915,7 +7915,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   position: fixed !important;
 }
 
-.position-sticky {
+.position-sticky, .table .cell-actions, .table .cell-heading {
   position: sticky !important;
 }
 
@@ -7943,7 +7943,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   bottom: 100% !important;
 }
 
-.start-0 {
+.start-0, .table .cell-heading {
   left: 0 !important;
 }
 
@@ -7955,7 +7955,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   left: 100% !important;
 }
 
-.end-0 {
+.end-0, .table .cell-actions {
   right: 0 !important;
 }
 
@@ -9073,7 +9073,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   text-align: left !important;
 }
 
-.text-end {
+.text-end, .table .cell-actions {
   text-align: right !important;
 }
 
@@ -16351,7 +16351,7 @@ body.compensate-for-scrollbar {
   border-radius: 0px !important;
 }
 
-.w--1 {
+.w--1, .table .cell-actions {
   width: 1px !important;
 }
 
@@ -22475,11 +22475,11 @@ body.compensate-for-scrollbar {
   border-radius: 150px !important;
 }
 
-.w--160 {
+.w--160, .table .cell-heading {
   width: 160px !important;
 }
 
-.minw--160 {
+.minw--160, .table .cell-heading {
   min-width: 160px !important;
 }
 
