@@ -7839,7 +7839,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: table-cell !important;
 }
 
-.d-flex, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge, .flex-area, .app-layout > .app-layout-row > * {
+.d-flex, .table .list-statuses, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .badge, .flex-area, .app-layout > .app-layout-row > * {
   display: flex !important;
 }
 
@@ -8241,7 +8241,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   flex-shrink: 1 !important;
 }
 
-.flex-wrap {
+.flex-wrap, .table .list-statuses {
   flex-wrap: wrap !important;
 }
 
@@ -8445,7 +8445,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   margin-bottom: 0 !important;
 }
 
-.my-1 {
+.my-1, .table .list-statuses > li {
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
@@ -8632,7 +8632,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   margin-left: -3rem !important;
 }
 
-.my-n1 {
+.my-n1, .table .list-statuses {
   margin-top: -0.25rem !important;
   margin-bottom: -0.25rem !important;
 }
@@ -9109,7 +9109,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   white-space: normal !important;
 }
 
-.text-nowrap {
+.text-nowrap, .table .list-statuses {
   white-space: nowrap !important;
 }
 
@@ -13293,7 +13293,6 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
 }
-
 /* ! Flickity v2.2.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -16410,12 +16409,14 @@ body.compensate-for-scrollbar {
 
 .ms--1,
 .mx--1,
+.table .list-statuses > li,
 .m--1 {
   margin-left: 1px !important;
 }
 
 .me--1,
 .mx--1,
+.table .list-statuses > li,
 .m--1 {
   margin-right: 1px !important;
 }
@@ -16434,12 +16435,14 @@ body.compensate-for-scrollbar {
 
 .ms--n1,
 .mx--n1,
+.table .list-statuses,
 .m--n1 {
   margin-left: -1px !important;
 }
 
 .me--n1,
 .mx--n1,
+.table .list-statuses,
 .m--n1 {
   margin-right: -1px !important;
 }
