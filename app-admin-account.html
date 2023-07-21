@@ -91,7 +91,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/style.compiled.css?h=989e930a4e022724bd89659205365bd1">
+    <link rel="stylesheet" href="assets/css/style.compiled.css?h=cdc4c30255beba630485a3b0f6a51df3">
 </head>
 
 <body>
@@ -217,7 +217,7 @@
                                     <div class="row gx-1 align-items-center">
                                         <div class="col"><small class="d-block fs--small">Administracja</small>
                                             <div>
-                                                <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Twoje konto</button>
+                                                <div class="dropdown"><button class="btn btn-lg dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Twoje konto</button>
                                                     <div class="dropdown-menu"><a class="dropdown-item" href="app-admin-account.html">Twoje konto</a><a class="dropdown-item" href="app-admin-notifications.html">Powiadomienia</a>
                                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="app-admin-users.html">Użytkownicy</a><a class="dropdown-item" href="app-admin-companies.html">Firmy</a><a class="dropdown-item" href="app-admin-subscriptions.html">Subskrypcje</a><a class="dropdown-item" href="app-admin-plans.html">Plany</a>
                                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Wyloguj się</a>
@@ -232,7 +232,117 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div></div>
+                                <div>
+                                    <div class="row gx-0 gy-3 flex-column">
+                                        <div class="col">
+                                            <div class="card card-form">
+                                                <div class="card-header">
+                                                    <h5 class="mb-0">Twoje konto</h5>
+                                                </div>
+                                                <div>
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Imię</th>
+                                                                <td>
+                                                                    <div><input type="text" value="Aplikacja tabletowa"></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Adres e-mail</th>
+                                                                <td>
+                                                                    <div><input type="email" value="aplikacja-tabletowa@rogalik-panel.pl"></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Rola</th>
+                                                                <td>
+                                                                    <div><select class="form-select">
+                                                                            <option value="">Wybierz…</option>
+                                                                            <option value="">Dostawca</option>
+                                                                            <option value="">Piekarz</option>
+                                                                            <option value="">Cukiernik</option>
+                                                                            <option value="">Magazynier</option>
+                                                                            <option value="" selected="">Administrator</option>
+                                                                        </select></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Aktualne hasło</th>
+                                                                <td>
+                                                                    <div><input type="password" placeholder="Podaj hasło"></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Nowe hasło</th>
+                                                                <td>
+                                                                    <div><input type="password" placeholder="Wpisz nowe hasło"></div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row justify-content-end align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                                                                </svg><span>Zapisz zmiany</span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card-form">
+                                                <div class="card-header">
+                                                    <h5 class="mb-0">Dane firmy</h5>
+                                                </div>
+                                                <div>
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Nazwa firmy</th>
+                                                                <td>Prosix System</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Adres firmy</th>
+                                                                <td>1 Maja 34<br>58-260 Zbrojowiece Zdrój</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>NIP</th>
+                                                                <td>882 1900223</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Telefon firmy</th>
+                                                                <td>111 222 333</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card-form">
+                                                <div class="card-header">
+                                                    <h5 class="mb-0">Subskrypcja</h5>
+                                                </div>
+                                                <div>
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Plan</th>
+                                                                <td>Rozszerzony</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Ważne do</th>
+                                                                <td>2122-07-16 (za 98 lat)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
