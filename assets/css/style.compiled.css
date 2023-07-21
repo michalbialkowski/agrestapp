@@ -7969,7 +7969,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.shadow-sm, .card-items {
+.shadow-sm, .card-form, .card-items {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
@@ -8111,7 +8111,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   border-top: 0 !important;
 }
 
-.border-end, .card-form .table tbody th {
+.border-end {
   border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
@@ -13411,6 +13411,17 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
 .table .cell-subheading {
   left: 160px;
 }
+@media (max-width: 991.98px) {
+  .card-form table, .card-form tbody, .card-form tr, .card-form th, .card-form td {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .card-form th {
+    border-right: 1px solid var(--bs-table-border-color);
+    width: 1px;
+  }
+}
 /* ! Flickity v2.2.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -16477,7 +16488,7 @@ body.compensate-for-scrollbar {
   border-radius: 0px !important;
 }
 
-.w--1, .table .cell-index, .table .cell-actions, .card-form .table tbody th {
+.w--1, .table .cell-index, .table .cell-actions {
   width: 1px !important;
 }
 
