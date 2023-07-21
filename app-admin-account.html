@@ -284,7 +284,7 @@
                                                 </div>
                                                 <div class="card-footer">
                                                     <div class="row justify-content-end align-items-center">
-                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button" data-bs-target="#toast__notification" data-bs-toggle="toast"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
                                                                     <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
                                                                 </svg><span>Zapisz zmiany</span></button></div>
                                                     </div>
@@ -403,7 +403,21 @@
             </div>
         </div>
     </div>
+    <div class="toast-container position-fixed end-0 bottom-0">
+        <div class="toast fade m-3 hide" role="alert" id="toast__activity">
+            <div class="toast-header"><img class="me-2"><strong class="me-auto">Nowa aktywność</strong><small>10 min ago</small><button class="btn-close ms-2 mb-1 close" type="button" aria-label="Close" data-bs-dismiss="toast"></button></div>
+            <div class="toast-body" role="alert">
+                <p class="mb-0">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+        </div>
+        <div class="toast fade text-success-emphasis bg-success-subtle border-success m-3 rounded hide" role="alert" id="toast__notification">
+            <div class="toast-body" role="alert">
+                <p class="mb-0">Twoje konto zostało zaktualizowanie</p>
+            </div>
+        </div>
+    </div>
     <script src="assets/bootstrap/js/bootstrap.min.js?h=b4349cf7232e6b66621e089f2b9beee5"></script>
+    <script src="assets/js/bs-init.js?h=af61fb61b6a88cec646e9c8db02523c0"></script>
     <script src="assets/js/custom/libs/jquery.fancybox.js?h=b63c7cca1b5e4bd57bd854c444b895c9"></script>
     <script src="assets/js/custom/libs/flickity.pkgd.min.js?h=8625a9d2a4f797e756dbd299c2d74fc2"></script>
     <script src="assets/js/custom/libs/masonry.pkgd.js?h=c39480835cf00844e6407f24d8aaba2e"></script>
