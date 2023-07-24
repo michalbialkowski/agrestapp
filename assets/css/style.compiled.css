@@ -317,7 +317,7 @@ strong {
   font-weight: bolder;
 }
 
-small, .small, .card-form .table tbody th, .card-form .table tbody td {
+small, .small, .table-form tbody th, .table-form tbody td {
   font-size: 0.875em;
 }
 
@@ -2315,7 +2315,7 @@ progress {
   caption-side: top;
 }
 
-.table-sm > :not(caption) > * > *, .card-form .table > :not(caption) > * > * {
+.table-sm > :not(caption) > * > *, .table-form > :not(caption) > * > * {
   padding: 0.25rem 0.25rem;
 }
 
@@ -2530,9 +2530,9 @@ progress {
   color: var(--bs-secondary-color);
 }
 
-.form-control, .card-form .table tbody td > div > input[type=text],
-.card-form .table tbody td > div > input[type=email],
-.card-form .table tbody td > div > input[type=password] {
+.form-control, .table-form tbody td > div > input[type=text],
+.table-form tbody td > div > input[type=email],
+.table-form tbody td > div > input[type=password] {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -2548,59 +2548,59 @@ progress {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control, .card-form .table tbody td > div > input[type=text],
-  .card-form .table tbody td > div > input[type=email],
-  .card-form .table tbody td > div > input[type=password] {
+  .form-control, .table-form tbody td > div > input[type=text],
+  .table-form tbody td > div > input[type=email],
+  .table-form tbody td > div > input[type=password] {
     transition: none;
   }
 }
-.form-control[type=file], .card-form .table tbody td > div > input[type=file][type=text],
-.card-form .table tbody td > div > input[type=file][type=email],
-.card-form .table tbody td > div > input[type=file][type=password] {
+.form-control[type=file], .table-form tbody td > div > input[type=file][type=text],
+.table-form tbody td > div > input[type=file][type=email],
+.table-form tbody td > div > input[type=file][type=password] {
   overflow: hidden;
 }
-.form-control[type=file]:not(:disabled):not([readonly]), .card-form .table tbody td > div > input[type=file][type=text]:not(:disabled):not([readonly]),
-.card-form .table tbody td > div > input[type=file][type=email]:not(:disabled):not([readonly]),
-.card-form .table tbody td > div > input[type=file][type=password]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]), .table-form tbody td > div > input[type=file][type=text]:not(:disabled):not([readonly]),
+.table-form tbody td > div > input[type=file][type=email]:not(:disabled):not([readonly]),
+.table-form tbody td > div > input[type=file][type=password]:not(:disabled):not([readonly]) {
   cursor: pointer;
 }
-.form-control:focus, .card-form .table tbody td > div > input[type=text]:focus,
-.card-form .table tbody td > div > input[type=email]:focus,
-.card-form .table tbody td > div > input[type=password]:focus {
+.form-control:focus, .table-form tbody td > div > input[type=text]:focus,
+.table-form tbody td > div > input[type=email]:focus,
+.table-form tbody td > div > input[type=password]:focus {
   color: var(--bs-body-color);
   background-color: var(--bs-body-bg);
   border-color: #9ab1f5;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(52, 99, 235, 0.25);
 }
-.form-control::-webkit-date-and-time-value, .card-form .table tbody td > div > input[type=text]::-webkit-date-and-time-value,
-.card-form .table tbody td > div > input[type=email]::-webkit-date-and-time-value,
-.card-form .table tbody td > div > input[type=password]::-webkit-date-and-time-value {
+.form-control::-webkit-date-and-time-value, .table-form tbody td > div > input[type=text]::-webkit-date-and-time-value,
+.table-form tbody td > div > input[type=email]::-webkit-date-and-time-value,
+.table-form tbody td > div > input[type=password]::-webkit-date-and-time-value {
   min-width: 85px;
   height: 1.5em;
   margin: 0;
 }
-.form-control::-webkit-datetime-edit, .card-form .table tbody td > div > input[type=text]::-webkit-datetime-edit,
-.card-form .table tbody td > div > input[type=email]::-webkit-datetime-edit,
-.card-form .table tbody td > div > input[type=password]::-webkit-datetime-edit {
+.form-control::-webkit-datetime-edit, .table-form tbody td > div > input[type=text]::-webkit-datetime-edit,
+.table-form tbody td > div > input[type=email]::-webkit-datetime-edit,
+.table-form tbody td > div > input[type=password]::-webkit-datetime-edit {
   display: block;
   padding: 0;
 }
-.form-control::placeholder, .card-form .table tbody td > div > input[type=text]::placeholder,
-.card-form .table tbody td > div > input[type=email]::placeholder,
-.card-form .table tbody td > div > input[type=password]::placeholder {
+.form-control::placeholder, .table-form tbody td > div > input[type=text]::placeholder,
+.table-form tbody td > div > input[type=email]::placeholder,
+.table-form tbody td > div > input[type=password]::placeholder {
   color: var(--bs-secondary-color);
   opacity: 1;
 }
-.form-control:disabled, .card-form .table tbody td > div > input[type=text]:disabled,
-.card-form .table tbody td > div > input[type=email]:disabled,
-.card-form .table tbody td > div > input[type=password]:disabled {
+.form-control:disabled, .table-form tbody td > div > input[type=text]:disabled,
+.table-form tbody td > div > input[type=email]:disabled,
+.table-form tbody td > div > input[type=password]:disabled {
   background-color: var(--bs-secondary-bg);
   opacity: 1;
 }
-.form-control::file-selector-button, .card-form .table tbody td > div > input[type=text]::file-selector-button,
-.card-form .table tbody td > div > input[type=email]::file-selector-button,
-.card-form .table tbody td > div > input[type=password]::file-selector-button {
+.form-control::file-selector-button, .table-form tbody td > div > input[type=text]::file-selector-button,
+.table-form tbody td > div > input[type=email]::file-selector-button,
+.table-form tbody td > div > input[type=password]::file-selector-button {
   padding: 0.375rem 0.75rem;
   margin: -0.375rem -0.75rem;
   margin-inline-end: 0.75rem;
@@ -2615,15 +2615,15 @@ progress {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-control::file-selector-button, .card-form .table tbody td > div > input[type=text]::file-selector-button,
-  .card-form .table tbody td > div > input[type=email]::file-selector-button,
-  .card-form .table tbody td > div > input[type=password]::file-selector-button {
+  .form-control::file-selector-button, .table-form tbody td > div > input[type=text]::file-selector-button,
+  .table-form tbody td > div > input[type=email]::file-selector-button,
+  .table-form tbody td > div > input[type=password]::file-selector-button {
     transition: none;
   }
 }
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .card-form .table tbody td > div > input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button,
-.card-form .table tbody td > div > input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button,
-.card-form .table tbody td > div > input[type=password]:hover:not(:disabled):not([readonly])::file-selector-button {
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .table-form tbody td > div > input[type=text]:hover:not(:disabled):not([readonly])::file-selector-button,
+.table-form tbody td > div > input[type=email]:hover:not(:disabled):not([readonly])::file-selector-button,
+.table-form tbody td > div > input[type=password]:hover:not(:disabled):not([readonly])::file-selector-button {
   background-color: var(--bs-secondary-bg);
 }
 
@@ -2641,23 +2641,23 @@ progress {
 .form-control-plaintext:focus {
   outline: 0;
 }
-.form-control-plaintext.form-control-sm, .card-form .table tbody td > div > input.form-control-plaintext[type=text],
-.card-form .table tbody td > div > input.form-control-plaintext[type=email],
-.card-form .table tbody td > div > input.form-control-plaintext[type=password], .form-control-plaintext.form-control-lg {
+.form-control-plaintext.form-control-sm, .table-form tbody td > div > input.form-control-plaintext[type=text],
+.table-form tbody td > div > input.form-control-plaintext[type=email],
+.table-form tbody td > div > input.form-control-plaintext[type=password], .form-control-plaintext.form-control-lg {
   padding-right: 0;
   padding-left: 0;
 }
 
-.form-control-sm, .card-form .table tbody td > div > input[type=text],
-.card-form .table tbody td > div > input[type=email],
-.card-form .table tbody td > div > input[type=password] {
+.form-control-sm, .table-form tbody td > div > input[type=text],
+.table-form tbody td > div > input[type=email],
+.table-form tbody td > div > input[type=password] {
   min-height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
   padding: 0.25rem 0.5rem;
   font-size: 0.74375rem;
 }
-.form-control-sm::file-selector-button, .card-form .table tbody td > div > input[type=text]::file-selector-button,
-.card-form .table tbody td > div > input[type=email]::file-selector-button,
-.card-form .table tbody td > div > input[type=password]::file-selector-button {
+.form-control-sm::file-selector-button, .table-form tbody td > div > input[type=text]::file-selector-button,
+.table-form tbody td > div > input[type=email]::file-selector-button,
+.table-form tbody td > div > input[type=password]::file-selector-button {
   padding: 0.25rem 0.5rem;
   margin: -0.25rem -0.5rem;
   margin-inline-end: 0.5rem;
@@ -2698,16 +2698,16 @@ textarea.form-control-lg {
 .form-control-color::-webkit-color-swatch {
   border: 0 !important;
 }
-.form-control-color.form-control-sm, .card-form .table tbody td > div > input.form-control-color[type=text],
-.card-form .table tbody td > div > input.form-control-color[type=email],
-.card-form .table tbody td > div > input.form-control-color[type=password] {
+.form-control-color.form-control-sm, .table-form tbody td > div > input.form-control-color[type=text],
+.table-form tbody td > div > input.form-control-color[type=email],
+.table-form tbody td > div > input.form-control-color[type=password] {
   height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
 }
 .form-control-color.form-control-lg {
   height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
 }
 
-.form-select, .card-form .table tbody td > div > select {
+.form-select, .table-form tbody td > div > select {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   display: block;
   width: 100%;
@@ -2727,28 +2727,28 @@ textarea.form-control-lg {
   appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  .form-select, .card-form .table tbody td > div > select {
+  .form-select, .table-form tbody td > div > select {
     transition: none;
   }
 }
-.form-select:focus, .card-form .table tbody td > div > select:focus {
+.form-select:focus, .table-form tbody td > div > select:focus {
   border-color: #9ab1f5;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(52, 99, 235, 0.25);
 }
-.form-select[multiple], .card-form .table tbody td > div > select[multiple], .form-select[size]:not([size="1"]), .card-form .table tbody td > div > select[size]:not([size="1"]) {
+.form-select[multiple], .table-form tbody td > div > select[multiple], .form-select[size]:not([size="1"]), .table-form tbody td > div > select[size]:not([size="1"]) {
   padding-right: 0.75rem;
   background-image: none;
 }
-.form-select:disabled, .card-form .table tbody td > div > select:disabled {
+.form-select:disabled, .table-form tbody td > div > select:disabled {
   background-color: var(--bs-secondary-bg);
 }
-.form-select:-moz-focusring, .card-form .table tbody td > div > select:-moz-focusring {
+.form-select:-moz-focusring, .table-form tbody td > div > select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 var(--bs-body-color);
 }
 
-.form-select-sm, .card-form .table tbody td > div > select {
+.form-select-sm, .table-form tbody td > div > select {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
@@ -2762,7 +2762,7 @@ textarea.form-control-lg {
   font-size: 1.0625rem;
 }
 
-[data-bs-theme=dark] .form-select, [data-bs-theme=dark] .card-form .table tbody td > div > select, .card-form .table tbody [data-bs-theme=dark] td > div > select {
+[data-bs-theme=dark] .form-select, [data-bs-theme=dark] .table-form tbody td > div > select, .table-form tbody [data-bs-theme=dark] td > div > select {
   --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23adb5bd' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
 }
 
@@ -2972,12 +2972,12 @@ textarea.form-control-lg {
 .form-floating {
   position: relative;
 }
-.form-floating > .form-control, .card-form .table tbody td > div.form-floating > input[type=text],
-.card-form .table tbody td > div.form-floating > input[type=email],
-.card-form .table tbody td > div.form-floating > input[type=password],
+.form-floating > .form-control, .table-form tbody td > div.form-floating > input[type=text],
+.table-form tbody td > div.form-floating > input[type=email],
+.table-form tbody td > div.form-floating > input[type=password],
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select,
-.card-form .table tbody td > div.form-floating > select {
+.table-form tbody td > div.form-floating > select {
   height: calc(3.5rem + calc(var(--bs-border-width) * 2));
   min-height: calc(3.5rem + calc(var(--bs-border-width) * 2));
   line-height: 1.25;
@@ -3003,62 +3003,62 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.form-floating > .form-control, .card-form .table tbody td > div.form-floating > input[type=text],
-.card-form .table tbody td > div.form-floating > input[type=email],
-.card-form .table tbody td > div.form-floating > input[type=password],
+.form-floating > .form-control, .table-form tbody td > div.form-floating > input[type=text],
+.table-form tbody td > div.form-floating > input[type=email],
+.table-form tbody td > div.form-floating > input[type=password],
 .form-floating > .form-control-plaintext {
   padding: 1rem 0.75rem;
 }
-.form-floating > .form-control::placeholder, .card-form .table tbody td > div.form-floating > input[type=text]::placeholder,
-.card-form .table tbody td > div.form-floating > input[type=email]::placeholder,
-.card-form .table tbody td > div.form-floating > input[type=password]::placeholder,
+.form-floating > .form-control::placeholder, .table-form tbody td > div.form-floating > input[type=text]::placeholder,
+.table-form tbody td > div.form-floating > input[type=email]::placeholder,
+.table-form tbody td > div.form-floating > input[type=password]::placeholder,
 .form-floating > .form-control-plaintext::placeholder {
   color: transparent;
 }
-.form-floating > .form-control:focus, .card-form .table tbody td > div.form-floating > input[type=text]:focus,
-.card-form .table tbody td > div.form-floating > input[type=email]:focus,
-.card-form .table tbody td > div.form-floating > input[type=password]:focus, .form-floating > .form-control:not(:placeholder-shown), .card-form .table tbody td > div.form-floating > input[type=text]:not(:placeholder-shown),
-.card-form .table tbody td > div.form-floating > input[type=email]:not(:placeholder-shown),
-.card-form .table tbody td > div.form-floating > input[type=password]:not(:placeholder-shown),
+.form-floating > .form-control:focus, .table-form tbody td > div.form-floating > input[type=text]:focus,
+.table-form tbody td > div.form-floating > input[type=email]:focus,
+.table-form tbody td > div.form-floating > input[type=password]:focus, .form-floating > .form-control:not(:placeholder-shown), .table-form tbody td > div.form-floating > input[type=text]:not(:placeholder-shown),
+.table-form tbody td > div.form-floating > input[type=email]:not(:placeholder-shown),
+.table-form tbody td > div.form-floating > input[type=password]:not(:placeholder-shown),
 .form-floating > .form-control-plaintext:focus,
 .form-floating > .form-control-plaintext:not(:placeholder-shown) {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:-webkit-autofill, .card-form .table tbody td > div.form-floating > input[type=text]:-webkit-autofill,
-.card-form .table tbody td > div.form-floating > input[type=email]:-webkit-autofill,
-.card-form .table tbody td > div.form-floating > input[type=password]:-webkit-autofill,
+.form-floating > .form-control:-webkit-autofill, .table-form tbody td > div.form-floating > input[type=text]:-webkit-autofill,
+.table-form tbody td > div.form-floating > input[type=email]:-webkit-autofill,
+.table-form tbody td > div.form-floating > input[type=password]:-webkit-autofill,
 .form-floating > .form-control-plaintext:-webkit-autofill {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-select, .card-form .table tbody td > div.form-floating > select {
+.form-floating > .form-select, .table-form tbody td > div.form-floating > select {
   padding-top: 1.625rem;
   padding-bottom: 0.625rem;
 }
-.form-floating > .form-control:focus ~ label, .card-form .table tbody td > div.form-floating > input[type=text]:focus ~ label,
-.card-form .table tbody td > div.form-floating > input[type=email]:focus ~ label,
-.card-form .table tbody td > div.form-floating > input[type=password]:focus ~ label,
+.form-floating > .form-control:focus ~ label, .table-form tbody td > div.form-floating > input[type=text]:focus ~ label,
+.table-form tbody td > div.form-floating > input[type=email]:focus ~ label,
+.table-form tbody td > div.form-floating > input[type=password]:focus ~ label,
 .form-floating > .form-control:not(:placeholder-shown) ~ label,
-.card-form .table tbody td > div.form-floating > input[type=text]:not(:placeholder-shown) ~ label,
-.card-form .table tbody td > div.form-floating > input[type=email]:not(:placeholder-shown) ~ label,
-.card-form .table tbody td > div.form-floating > input[type=password]:not(:placeholder-shown) ~ label,
+.table-form tbody td > div.form-floating > input[type=text]:not(:placeholder-shown) ~ label,
+.table-form tbody td > div.form-floating > input[type=email]:not(:placeholder-shown) ~ label,
+.table-form tbody td > div.form-floating > input[type=password]:not(:placeholder-shown) ~ label,
 .form-floating > .form-control-plaintext ~ label,
 .form-floating > .form-select ~ label,
-.card-form .table tbody td > div.form-floating > select ~ label {
+.table-form tbody td > div.form-floating > select ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
-.form-floating > .form-control:focus ~ label::after, .card-form .table tbody td > div.form-floating > input[type=text]:focus ~ label::after,
-.card-form .table tbody td > div.form-floating > input[type=email]:focus ~ label::after,
-.card-form .table tbody td > div.form-floating > input[type=password]:focus ~ label::after,
+.form-floating > .form-control:focus ~ label::after, .table-form tbody td > div.form-floating > input[type=text]:focus ~ label::after,
+.table-form tbody td > div.form-floating > input[type=email]:focus ~ label::after,
+.table-form tbody td > div.form-floating > input[type=password]:focus ~ label::after,
 .form-floating > .form-control:not(:placeholder-shown) ~ label::after,
-.card-form .table tbody td > div.form-floating > input[type=text]:not(:placeholder-shown) ~ label::after,
-.card-form .table tbody td > div.form-floating > input[type=email]:not(:placeholder-shown) ~ label::after,
-.card-form .table tbody td > div.form-floating > input[type=password]:not(:placeholder-shown) ~ label::after,
+.table-form tbody td > div.form-floating > input[type=text]:not(:placeholder-shown) ~ label::after,
+.table-form tbody td > div.form-floating > input[type=email]:not(:placeholder-shown) ~ label::after,
+.table-form tbody td > div.form-floating > input[type=password]:not(:placeholder-shown) ~ label::after,
 .form-floating > .form-control-plaintext ~ label::after,
 .form-floating > .form-select ~ label::after,
-.card-form .table tbody td > div.form-floating > select ~ label::after {
+.table-form tbody td > div.form-floating > select ~ label::after {
   position: absolute;
   inset: 1rem 0.375rem;
   z-index: -1;
@@ -3066,9 +3066,9 @@ textarea.form-control-lg {
   content: "";
   background-color: var(--bs-body-bg);
 }
-.form-floating > .form-control:-webkit-autofill ~ label, .card-form .table tbody td > div.form-floating > input[type=text]:-webkit-autofill ~ label,
-.card-form .table tbody td > div.form-floating > input[type=email]:-webkit-autofill ~ label,
-.card-form .table tbody td > div.form-floating > input[type=password]:-webkit-autofill ~ label {
+.form-floating > .form-control:-webkit-autofill ~ label, .table-form tbody td > div.form-floating > input[type=text]:-webkit-autofill ~ label,
+.table-form tbody td > div.form-floating > input[type=email]:-webkit-autofill ~ label,
+.table-form tbody td > div.form-floating > input[type=password]:-webkit-autofill ~ label {
   color: rgba(var(--bs-body-color-rgb), 0.65);
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
@@ -3089,22 +3089,22 @@ textarea.form-control-lg {
   align-items: stretch;
   width: 100%;
 }
-.input-group > .form-control, .card-form .table tbody td > div.input-group > input[type=text],
-.card-form .table tbody td > div.input-group > input[type=email],
-.card-form .table tbody td > div.input-group > input[type=password],
+.input-group > .form-control, .table-form tbody td > div.input-group > input[type=text],
+.table-form tbody td > div.input-group > input[type=email],
+.table-form tbody td > div.input-group > input[type=password],
 .input-group > .form-select,
-.card-form .table tbody td > div.input-group > select,
+.table-form tbody td > div.input-group > select,
 .input-group > .form-floating {
   position: relative;
   flex: 1 1 auto;
   width: 1%;
   min-width: 0;
 }
-.input-group > .form-control:focus, .card-form .table tbody td > div.input-group > input[type=text]:focus,
-.card-form .table tbody td > div.input-group > input[type=email]:focus,
-.card-form .table tbody td > div.input-group > input[type=password]:focus,
+.input-group > .form-control:focus, .table-form tbody td > div.input-group > input[type=text]:focus,
+.table-form tbody td > div.input-group > input[type=email]:focus,
+.table-form tbody td > div.input-group > input[type=password]:focus,
 .input-group > .form-select:focus,
-.card-form .table tbody td > div.input-group > select:focus,
+.table-form tbody td > div.input-group > select:focus,
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
@@ -3130,31 +3130,31 @@ textarea.form-control-lg {
   border: var(--bs-border-width) solid var(--bs-border-color);
 }
 
-.input-group-lg > .form-control, .card-form .table tbody td > div.input-group-lg > input[type=text],
-.card-form .table tbody td > div.input-group-lg > input[type=email],
-.card-form .table tbody td > div.input-group-lg > input[type=password],
+.input-group-lg > .form-control, .table-form tbody td > div.input-group-lg > input[type=text],
+.table-form tbody td > div.input-group-lg > input[type=email],
+.table-form tbody td > div.input-group-lg > input[type=password],
 .input-group-lg > .form-select,
-.card-form .table tbody td > div.input-group-lg > select,
+.table-form tbody td > div.input-group-lg > select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.0625rem;
 }
 
-.input-group-sm > .form-control, .card-form .table tbody td > div.input-group-sm > input[type=text],
-.card-form .table tbody td > div.input-group-sm > input[type=email],
-.card-form .table tbody td > div.input-group-sm > input[type=password],
+.input-group-sm > .form-control, .table-form tbody td > div.input-group-sm > input[type=text],
+.table-form tbody td > div.input-group-sm > input[type=email],
+.table-form tbody td > div.input-group-sm > input[type=password],
 .input-group-sm > .form-select,
-.card-form .table tbody td > div.input-group-sm > select,
+.table-form tbody td > div.input-group-sm > select,
 .input-group-sm > .input-group-text,
 .input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.74375rem;
 }
 
-.input-group-lg > .form-select, .card-form .table tbody td > div.input-group-lg > select,
+.input-group-lg > .form-select, .table-form tbody td > div.input-group-lg > select,
 .input-group-sm > .form-select,
-.card-form .table tbody td > div.input-group-sm > select {
+.table-form tbody td > div.input-group-sm > select {
   padding-right: 3rem;
 }
 
@@ -3189,13 +3189,13 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:valid, .was-validated .card-form .table tbody td > div > input[type=text]:valid, .card-form .table tbody .was-validated td > div > input[type=text]:valid,
-.was-validated .card-form .table tbody td > div > input[type=email]:valid,
-.card-form .table tbody .was-validated td > div > input[type=email]:valid,
-.was-validated .card-form .table tbody td > div > input[type=password]:valid,
-.card-form .table tbody .was-validated td > div > input[type=password]:valid, .form-control.is-valid, .card-form .table tbody td > div > input.is-valid[type=text],
-.card-form .table tbody td > div > input.is-valid[type=email],
-.card-form .table tbody td > div > input.is-valid[type=password] {
+.was-validated .form-control:valid, .was-validated .table-form tbody td > div > input[type=text]:valid, .table-form tbody .was-validated td > div > input[type=text]:valid,
+.was-validated .table-form tbody td > div > input[type=email]:valid,
+.table-form tbody .was-validated td > div > input[type=email]:valid,
+.was-validated .table-form tbody td > div > input[type=password]:valid,
+.table-form tbody .was-validated td > div > input[type=password]:valid, .form-control.is-valid, .table-form tbody td > div > input.is-valid[type=text],
+.table-form tbody td > div > input.is-valid[type=email],
+.table-form tbody td > div > input.is-valid[type=password] {
   border-color: var(--bs-form-valid-border-color);
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
@@ -3203,13 +3203,13 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:valid:focus, .was-validated .card-form .table tbody td > div > input[type=text]:valid:focus, .card-form .table tbody .was-validated td > div > input[type=text]:valid:focus,
-.was-validated .card-form .table tbody td > div > input[type=email]:valid:focus,
-.card-form .table tbody .was-validated td > div > input[type=email]:valid:focus,
-.was-validated .card-form .table tbody td > div > input[type=password]:valid:focus,
-.card-form .table tbody .was-validated td > div > input[type=password]:valid:focus, .form-control.is-valid:focus, .card-form .table tbody td > div > input.is-valid[type=text]:focus,
-.card-form .table tbody td > div > input.is-valid[type=email]:focus,
-.card-form .table tbody td > div > input.is-valid[type=password]:focus {
+.was-validated .form-control:valid:focus, .was-validated .table-form tbody td > div > input[type=text]:valid:focus, .table-form tbody .was-validated td > div > input[type=text]:valid:focus,
+.was-validated .table-form tbody td > div > input[type=email]:valid:focus,
+.table-form tbody .was-validated td > div > input[type=email]:valid:focus,
+.was-validated .table-form tbody td > div > input[type=password]:valid:focus,
+.table-form tbody .was-validated td > div > input[type=password]:valid:focus, .form-control.is-valid:focus, .table-form tbody td > div > input.is-valid[type=text]:focus,
+.table-form tbody td > div > input.is-valid[type=email]:focus,
+.table-form tbody td > div > input.is-valid[type=password]:focus {
   border-color: var(--bs-form-valid-border-color);
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
 }
@@ -3219,16 +3219,16 @@ textarea.form-control-lg {
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
-.was-validated .form-select:valid, .was-validated .card-form .table tbody td > div > select:valid, .card-form .table tbody .was-validated td > div > select:valid, .form-select.is-valid, .card-form .table tbody td > div > select.is-valid {
+.was-validated .form-select:valid, .was-validated .table-form tbody td > div > select:valid, .table-form tbody .was-validated td > div > select:valid, .form-select.is-valid, .table-form tbody td > div > select.is-valid {
   border-color: var(--bs-form-valid-border-color);
 }
-.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .card-form .table tbody td > div > select:valid:not([multiple]):not([size]), .card-form .table tbody .was-validated td > div > select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .was-validated .card-form .table tbody td > div > select:valid:not([multiple])[size="1"], .card-form .table tbody .was-validated td > div > select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .card-form .table tbody td > div > select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], .card-form .table tbody td > div > select.is-valid:not([multiple])[size="1"] {
+.was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .table-form tbody td > div > select:valid:not([multiple]):not([size]), .table-form tbody .was-validated td > div > select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .was-validated .table-form tbody td > div > select:valid:not([multiple])[size="1"], .table-form tbody .was-validated td > div > select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .table-form tbody td > div > select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"], .table-form tbody td > div > select.is-valid:not([multiple])[size="1"] {
   --bs-form-select-bg-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   padding-right: 4.125rem;
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-select:valid:focus, .was-validated .card-form .table tbody td > div > select:valid:focus, .card-form .table tbody .was-validated td > div > select:valid:focus, .form-select.is-valid:focus, .card-form .table tbody td > div > select.is-valid:focus {
+.was-validated .form-select:valid:focus, .was-validated .table-form tbody td > div > select:valid:focus, .table-form tbody .was-validated td > div > select:valid:focus, .form-select.is-valid:focus, .table-form tbody td > div > select.is-valid:focus {
   border-color: var(--bs-form-valid-border-color);
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25);
 }
@@ -3254,18 +3254,18 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .card-form .table tbody td > div.input-group > input[type=text]:not(:focus):valid, .card-form .table tbody .was-validated td > div.input-group > input[type=text]:not(:focus):valid,
-.was-validated .card-form .table tbody td > div.input-group > input[type=email]:not(:focus):valid,
-.card-form .table tbody .was-validated td > div.input-group > input[type=email]:not(:focus):valid,
-.was-validated .card-form .table tbody td > div.input-group > input[type=password]:not(:focus):valid,
-.card-form .table tbody .was-validated td > div.input-group > input[type=password]:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .card-form .table tbody td > div.input-group > input[type=text]:not(:focus).is-valid,
-.card-form .table tbody td > div.input-group > input[type=email]:not(:focus).is-valid,
-.card-form .table tbody td > div.input-group > input[type=password]:not(:focus).is-valid,
+.was-validated .input-group > .form-control:not(:focus):valid, .was-validated .table-form tbody td > div.input-group > input[type=text]:not(:focus):valid, .table-form tbody .was-validated td > div.input-group > input[type=text]:not(:focus):valid,
+.was-validated .table-form tbody td > div.input-group > input[type=email]:not(:focus):valid,
+.table-form tbody .was-validated td > div.input-group > input[type=email]:not(:focus):valid,
+.was-validated .table-form tbody td > div.input-group > input[type=password]:not(:focus):valid,
+.table-form tbody .was-validated td > div.input-group > input[type=password]:not(:focus):valid, .input-group > .form-control:not(:focus).is-valid, .table-form tbody td > div.input-group > input[type=text]:not(:focus).is-valid,
+.table-form tbody td > div.input-group > input[type=email]:not(:focus).is-valid,
+.table-form tbody td > div.input-group > input[type=password]:not(:focus).is-valid,
 .was-validated .input-group > .form-select:not(:focus):valid,
-.was-validated .card-form .table tbody td > div.input-group > select:not(:focus):valid,
-.card-form .table tbody .was-validated td > div.input-group > select:not(:focus):valid,
+.was-validated .table-form tbody td > div.input-group > select:not(:focus):valid,
+.table-form tbody .was-validated td > div.input-group > select:not(:focus):valid,
 .input-group > .form-select:not(:focus).is-valid,
-.card-form .table tbody td > div.input-group > select:not(:focus).is-valid,
+.table-form tbody td > div.input-group > select:not(:focus).is-valid,
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
 .input-group > .form-floating:not(:focus-within).is-valid {
   z-index: 3;
@@ -3299,13 +3299,13 @@ textarea.form-control-lg {
   display: block;
 }
 
-.was-validated .form-control:invalid, .was-validated .card-form .table tbody td > div > input[type=text]:invalid, .card-form .table tbody .was-validated td > div > input[type=text]:invalid,
-.was-validated .card-form .table tbody td > div > input[type=email]:invalid,
-.card-form .table tbody .was-validated td > div > input[type=email]:invalid,
-.was-validated .card-form .table tbody td > div > input[type=password]:invalid,
-.card-form .table tbody .was-validated td > div > input[type=password]:invalid, .form-control.is-invalid, .card-form .table tbody td > div > input.is-invalid[type=text],
-.card-form .table tbody td > div > input.is-invalid[type=email],
-.card-form .table tbody td > div > input.is-invalid[type=password] {
+.was-validated .form-control:invalid, .was-validated .table-form tbody td > div > input[type=text]:invalid, .table-form tbody .was-validated td > div > input[type=text]:invalid,
+.was-validated .table-form tbody td > div > input[type=email]:invalid,
+.table-form tbody .was-validated td > div > input[type=email]:invalid,
+.was-validated .table-form tbody td > div > input[type=password]:invalid,
+.table-form tbody .was-validated td > div > input[type=password]:invalid, .form-control.is-invalid, .table-form tbody td > div > input.is-invalid[type=text],
+.table-form tbody td > div > input.is-invalid[type=email],
+.table-form tbody td > div > input.is-invalid[type=password] {
   border-color: var(--bs-form-invalid-border-color);
   padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
@@ -3313,13 +3313,13 @@ textarea.form-control-lg {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-control:invalid:focus, .was-validated .card-form .table tbody td > div > input[type=text]:invalid:focus, .card-form .table tbody .was-validated td > div > input[type=text]:invalid:focus,
-.was-validated .card-form .table tbody td > div > input[type=email]:invalid:focus,
-.card-form .table tbody .was-validated td > div > input[type=email]:invalid:focus,
-.was-validated .card-form .table tbody td > div > input[type=password]:invalid:focus,
-.card-form .table tbody .was-validated td > div > input[type=password]:invalid:focus, .form-control.is-invalid:focus, .card-form .table tbody td > div > input.is-invalid[type=text]:focus,
-.card-form .table tbody td > div > input.is-invalid[type=email]:focus,
-.card-form .table tbody td > div > input.is-invalid[type=password]:focus {
+.was-validated .form-control:invalid:focus, .was-validated .table-form tbody td > div > input[type=text]:invalid:focus, .table-form tbody .was-validated td > div > input[type=text]:invalid:focus,
+.was-validated .table-form tbody td > div > input[type=email]:invalid:focus,
+.table-form tbody .was-validated td > div > input[type=email]:invalid:focus,
+.was-validated .table-form tbody td > div > input[type=password]:invalid:focus,
+.table-form tbody .was-validated td > div > input[type=password]:invalid:focus, .form-control.is-invalid:focus, .table-form tbody td > div > input.is-invalid[type=text]:focus,
+.table-form tbody td > div > input.is-invalid[type=email]:focus,
+.table-form tbody td > div > input.is-invalid[type=password]:focus {
   border-color: var(--bs-form-invalid-border-color);
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
 }
@@ -3329,16 +3329,16 @@ textarea.form-control-lg {
   background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
-.was-validated .form-select:invalid, .was-validated .card-form .table tbody td > div > select:invalid, .card-form .table tbody .was-validated td > div > select:invalid, .form-select.is-invalid, .card-form .table tbody td > div > select.is-invalid {
+.was-validated .form-select:invalid, .was-validated .table-form tbody td > div > select:invalid, .table-form tbody .was-validated td > div > select:invalid, .form-select.is-invalid, .table-form tbody td > div > select.is-invalid {
   border-color: var(--bs-form-invalid-border-color);
 }
-.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .card-form .table tbody td > div > select:invalid:not([multiple]):not([size]), .card-form .table tbody .was-validated td > div > select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .was-validated .card-form .table tbody td > div > select:invalid:not([multiple])[size="1"], .card-form .table tbody .was-validated td > div > select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .card-form .table tbody td > div > select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], .card-form .table tbody td > div > select.is-invalid:not([multiple])[size="1"] {
+.was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .table-form tbody td > div > select:invalid:not([multiple]):not([size]), .table-form tbody .was-validated td > div > select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .was-validated .table-form tbody td > div > select:invalid:not([multiple])[size="1"], .table-form tbody .was-validated td > div > select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .table-form tbody td > div > select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"], .table-form tbody td > div > select.is-invalid:not([multiple])[size="1"] {
   --bs-form-select-bg-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   padding-right: 4.125rem;
   background-position: right 0.75rem center, center right 2.25rem;
   background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
-.was-validated .form-select:invalid:focus, .was-validated .card-form .table tbody td > div > select:invalid:focus, .card-form .table tbody .was-validated td > div > select:invalid:focus, .form-select.is-invalid:focus, .card-form .table tbody td > div > select.is-invalid:focus {
+.was-validated .form-select:invalid:focus, .was-validated .table-form tbody td > div > select:invalid:focus, .table-form tbody .was-validated td > div > select:invalid:focus, .form-select.is-invalid:focus, .table-form tbody td > div > select.is-invalid:focus {
   border-color: var(--bs-form-invalid-border-color);
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-danger-rgb), 0.25);
 }
@@ -3364,18 +3364,18 @@ textarea.form-control-lg {
   margin-left: 0.5em;
 }
 
-.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .card-form .table tbody td > div.input-group > input[type=text]:not(:focus):invalid, .card-form .table tbody .was-validated td > div.input-group > input[type=text]:not(:focus):invalid,
-.was-validated .card-form .table tbody td > div.input-group > input[type=email]:not(:focus):invalid,
-.card-form .table tbody .was-validated td > div.input-group > input[type=email]:not(:focus):invalid,
-.was-validated .card-form .table tbody td > div.input-group > input[type=password]:not(:focus):invalid,
-.card-form .table tbody .was-validated td > div.input-group > input[type=password]:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .card-form .table tbody td > div.input-group > input[type=text]:not(:focus).is-invalid,
-.card-form .table tbody td > div.input-group > input[type=email]:not(:focus).is-invalid,
-.card-form .table tbody td > div.input-group > input[type=password]:not(:focus).is-invalid,
+.was-validated .input-group > .form-control:not(:focus):invalid, .was-validated .table-form tbody td > div.input-group > input[type=text]:not(:focus):invalid, .table-form tbody .was-validated td > div.input-group > input[type=text]:not(:focus):invalid,
+.was-validated .table-form tbody td > div.input-group > input[type=email]:not(:focus):invalid,
+.table-form tbody .was-validated td > div.input-group > input[type=email]:not(:focus):invalid,
+.was-validated .table-form tbody td > div.input-group > input[type=password]:not(:focus):invalid,
+.table-form tbody .was-validated td > div.input-group > input[type=password]:not(:focus):invalid, .input-group > .form-control:not(:focus).is-invalid, .table-form tbody td > div.input-group > input[type=text]:not(:focus).is-invalid,
+.table-form tbody td > div.input-group > input[type=email]:not(:focus).is-invalid,
+.table-form tbody td > div.input-group > input[type=password]:not(:focus).is-invalid,
 .was-validated .input-group > .form-select:not(:focus):invalid,
-.was-validated .card-form .table tbody td > div.input-group > select:not(:focus):invalid,
-.card-form .table tbody .was-validated td > div.input-group > select:not(:focus):invalid,
+.was-validated .table-form tbody td > div.input-group > select:not(:focus):invalid,
+.table-form tbody .was-validated td > div.input-group > select:not(:focus):invalid,
 .input-group > .form-select:not(:focus).is-invalid,
-.card-form .table tbody td > div.input-group > select:not(:focus).is-invalid,
+.table-form tbody td > div.input-group > select:not(:focus).is-invalid,
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
 .input-group > .form-floating:not(:focus-within).is-invalid {
   z-index: 4;
@@ -7797,7 +7797,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   opacity: 0.25;
 }
 
-.align-baseline, .card-form .table tbody {
+.align-baseline, .table-form tbody {
   vertical-align: baseline !important;
 }
 
@@ -7953,7 +7953,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: table-cell !important;
 }
 
-.d-flex, .table .list-statuses, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .flex-area, .app-layout > .app-layout-row > * {
+.d-flex, .table .list-statuses, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .flex-area, .app-layout > .app-layout-row > * {
   display: flex !important;
 }
 
@@ -7961,7 +7961,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: inline-flex !important;
 }
 
-.d-none, .btn-group-actions > .btn *:first-child + span, .btn-group-actions > .btn > span, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
+.d-none, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
   display: none !important;
 }
 
@@ -7969,7 +7969,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
-.shadow-sm, .card-form, .card-items {
+.shadow-sm, .card-items {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
@@ -8097,9 +8097,9 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-0, .card-form > .card-footer, .card-form .table tbody td > div > select, .card-form .table tbody td > div > input[type=text],
-.card-form .table tbody td > div > input[type=email],
-.card-form .table tbody td > div > input[type=password], .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card {
+.border-0, .table-form tbody td > div > select, .table-form tbody td > div > input[type=text],
+.table-form tbody td > div > input[type=email],
+.table-form tbody td > div > input[type=password], .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card {
   border: 0 !important;
 }
 
@@ -8349,7 +8349,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   flex-grow: 1 !important;
 }
 
-.flex-shrink-0, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
+.flex-shrink-0, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
   flex-shrink: 0 !important;
 }
 
@@ -8377,7 +8377,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
+.justify-content-center, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
   justify-content: center !important;
 }
 
@@ -8401,7 +8401,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   align-items: flex-end !important;
 }
 
-.align-items-center, .btn-action, .btn-group-actions > .btn, .list-group-item-product > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
+.align-items-center, .btn-action, .btn-group-actions > .btn, .list-group-item-product > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
   align-items: center !important;
 }
 
@@ -8707,7 +8707,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   margin: -0.25rem !important;
 }
 
-.m-n2, .card-form .table tbody td > div {
+.m-n2, .table-form tbody td > div {
   margin: -0.5rem !important;
 }
 
@@ -8861,7 +8861,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding: 0.25rem !important;
 }
 
-.p-2, .card-form .table tbody th, .card-form .table tbody td, .list-group-item-product > .row > * {
+.p-2, .table-form tbody th, .table-form tbody td, .list-group-item-product > .row > * {
   padding: 0.5rem !important;
 }
 
@@ -9149,7 +9149,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   font-weight: 300 !important;
 }
 
-.fw-normal, .card-form .table tbody th {
+.fw-normal, .table-form tbody th {
   font-weight: 400 !important;
 }
 
@@ -9225,7 +9225,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   white-space: normal !important;
 }
 
-.text-nowrap, .card-form .table tbody th, .table .list-statuses {
+.text-nowrap, .table-form tbody th, .table .list-statuses {
   white-space: nowrap !important;
 }
 
@@ -9556,7 +9556,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-danger, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td {
+.bg-danger, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9645,7 +9645,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   background-color: var(--bs-danger-bg-subtle) !important;
 }
 
-.bg-light-subtle, .card-form .table tbody th, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
+.bg-light-subtle, .table-form tbody th, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
 .list-group-menu html[data-nav=products] .list-group-item[data-nav=products],
 html[data-nav=products] .list-group-menu .list-group-item[data-nav=products],
 .list-group-menu html[data-nav=products-half] .list-group-item[data-nav=products-half],
@@ -9723,7 +9723,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
   border-radius: var(--bs-border-radius-xxl) !important;
 }
 
-.rounded-circle, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
+.rounded-circle, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
   border-radius: 50% !important;
 }
 
@@ -13347,7 +13347,7 @@ body {
   height: 26px;
   line-height: 1;
 }
-.app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .card-form .table tbody .badge > th, .card-form .table tbody .app-btn-notification .badge > th, .app-btn-notification .card-form .table tbody .badge > td, .card-form .table tbody .app-btn-notification .badge > td {
+.app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td {
   width: 20px;
   height: 20px;
 }
@@ -13412,12 +13412,16 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
   left: 160px;
 }
 @media (max-width: 991.98px) {
-  .card-form table, .card-form tbody, .card-form tr, .card-form th, .card-form td {
+  .table-form,
+  .table-form tbody,
+  .table-form tr,
+  .table-form th,
+  .table-form td {
     display: block;
   }
 }
 @media (min-width: 992px) {
-  .card-form th {
+  .table-form th {
     border-right: 1px solid var(--bs-table-border-color);
     width: 1px;
   }
@@ -16582,7 +16586,7 @@ body.compensate-for-scrollbar {
   margin-top: -1px !important;
 }
 
-.mb--n1, .btn-group-actions > .btn > span, .btn-action > span, .card-form .table,
+.mb--n1, .btn-group-actions > .btn > span, .btn-action > span, .table-form,
 .my--n1,
 .m--n1 {
   margin-bottom: -1px !important;

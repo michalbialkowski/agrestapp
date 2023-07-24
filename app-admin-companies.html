@@ -91,7 +91,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/style.compiled.css?h=ada3b5be5b9152cf876fbafd10ca60fd">
+    <link rel="stylesheet" href="assets/css/style.compiled.css?h=1fd254a28703a774bc31a5169947c3b9">
 </head>
 
 <body>
@@ -177,7 +177,8 @@
                                                 <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg?h=6f9764f7046c666e7e1a5e9813f61663"></div>
                                                 <div class="col"><span class="d-block"><a href="app-auctions.html">Aukcje</a></span>
                                                     <ul class="list-unstyled small mt-1">
-                                                        <li><a href="app-auctions.html">Lista aukcji</a></li>
+                                                        <li><a href="app-auctions.html">Trwające aukcje</a></li>
+                                                        <li><a href="app-auctions-archived.html">Zakończone</a></li>
                                                         <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
                                                     </ul>
                                                 </div>
@@ -232,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div>
+                                <div class="d-none d-lg-block">
                                     <div class="card card-items">
                                         <div class="table-responsive">
                                             <table class="table mb-0">
@@ -332,7 +333,7 @@
                                                 <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
                                                             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
                                                         </svg><span>Poprzednie</span></button></div>
-                                                <div class="col-auto">
+                                                <div class="col-auto d-none d-lg-block">
                                                     <div class="row align-items-center">
                                                         <div class="col-auto">
                                                             <div class="row gx-2 align-items-center">
@@ -351,6 +352,188 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
+                                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                                                        </svg></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-block d-lg-none">
+                                    <div class="row gx-0 gy-4 flex-column">
+                                        <div class="col">
+                                            <div class="row gx-0 gy-3 flex-column">
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-header">
+                                                            <h5 class="mb-0">Tenneco Automotive Eastern Europe Sp. z o.o.</h5>
+                                                        </div>
+                                                        <div>
+                                                            <table class="table table-form">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>E-mail</th>
+                                                                        <td>Izabela.polatynska-janik@remax-polska.pl</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Telefon</th>
+                                                                        <td>90988990912</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Miasto</th>
+                                                                        <td>Gliwice</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="card-footer border-0">
+                                                            <div class="row justify-content-end align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                                                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                                                            </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                            </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-header">
+                                                            <h5 class="mb-0">EG</h5>
+                                                        </div>
+                                                        <div>
+                                                            <table class="table table-form">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>E-mail</th>
+                                                                        <td>b.laskawiec@pro6system.com</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Telefon</th>
+                                                                        <td>725190816</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Miasto</th>
+                                                                        <td>Tarnowskie Góry</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="card-footer border-0">
+                                                            <div class="row justify-content-end align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                                                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                                                            </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                            </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-header">
+                                                            <h5 class="mb-0">Testowa</h5>
+                                                        </div>
+                                                        <div>
+                                                            <table class="table table-form">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>E-mail</th>
+                                                                        <td>testowa@test.pl</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Telefon</th>
+                                                                        <td>111111</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Miasto</th>
+                                                                        <td>Bielawa</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="card-footer border-0">
+                                                            <div class="row justify-content-end align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                                                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                                                            </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                            </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card shadow-sm">
+                                                        <div class="card-header">
+                                                            <h5 class="mb-0">Prosix System</h5>
+                                                        </div>
+                                                        <div>
+                                                            <table class="table table-form">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>E-mail</th>
+                                                                        <td>biuro@rogalik-panel.pl</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Telefon</th>
+                                                                        <td>111 222 333</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Miasto</th>
+                                                                        <td>Zbrojowice Zdrój</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Abonament do</th>
+                                                                        <td>16.07.2122</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="card-footer border-0">
+                                                            <div class="row justify-content-end align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
+                                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                                                                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                                                            </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
+                                                                                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                                                                            </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row justify-content-between align-items-center">
+                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
+                                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                                                        </svg><span>Poprzednie</span></button></div>
                                                 <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
                                                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
                                                         </svg></button></div>
@@ -430,6 +613,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas__edit">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Offcanvas Title</h5><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>Offcanvas Paragraph</p><button class="btn btn-primary" type="button" data-bs-dismiss="offcanvas">Close</button>
             </div>
         </div>
     </div>

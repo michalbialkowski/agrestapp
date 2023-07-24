@@ -91,7 +91,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/style.compiled.css?h=ada3b5be5b9152cf876fbafd10ca60fd">
+    <link rel="stylesheet" href="assets/css/style.compiled.css?h=1fd254a28703a774bc31a5169947c3b9">
 </head>
 
 <body>
@@ -177,7 +177,8 @@
                                                 <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg?h=6f9764f7046c666e7e1a5e9813f61663"></div>
                                                 <div class="col"><span class="d-block"><a href="app-auctions.html">Aukcje</a></span>
                                                     <ul class="list-unstyled small mt-1">
-                                                        <li><a href="app-auctions.html">Lista aukcji</a></li>
+                                                        <li><a href="app-auctions.html">Trwające aukcje</a></li>
+                                                        <li><a href="app-auctions-archived.html">Zakończone</a></li>
                                                         <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
                                                     </ul>
                                                 </div>
@@ -229,7 +230,186 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div></div>
+                                <div>
+                                    <div class="row gx-0 gy-4 flex-column">
+                                        <div class="col">
+                                            <div class="card card-items">
+                                                <div class="card-header">
+                                                    <div class="row gx-2 align-items-center">
+                                                        <div class="col"><small class="d-block fs--small">Wybrane produkty</small>
+                                                            <div>
+                                                                <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                                </svg><span>Dodaj</span></button></div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="cell-heading">Surowiec</th>
+                                                                <th class="text-end">Cena</th>
+                                                                <th class="cell-actions">Akcje</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="align-middle">
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end"><span class="d-block">1.93 zł</span><small class="d-block">Cena za kg</small><span class="d-flex justify-content-end align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock-history me-1">
+                                                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path>
+                                                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+                                                                        </svg><span>14.03.2022</span></span></td>
+                                                                <td class="cell-actions">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end"><span class="d-block">1.93 zł</span><small class="d-block">Cena za kg</small><span class="d-flex justify-content-end align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock-history me-1">
+                                                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path>
+                                                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+                                                                        </svg><span>14.03.2022</span></span></td>
+                                                                <td class="cell-actions">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end"><span class="d-block">1.93 zł</span><small class="d-block">Cena za kg</small><span class="d-flex justify-content-end align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock-history me-1">
+                                                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path>
+                                                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+                                                                        </svg><span>14.03.2022</span></span></td>
+                                                                <td class="cell-actions">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end"><span class="d-block">1.93 zł</span><small class="d-block">Cena za kg</small><span class="d-flex justify-content-end align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock-history me-1">
+                                                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path>
+                                                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+                                                                        </svg><span>14.03.2022</span></span></td>
+                                                                <td class="cell-actions">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end"><span class="d-block">1.93 zł</span><small class="d-block">Cena za kg</small><span class="d-flex justify-content-end align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-clock-history me-1">
+                                                                            <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"></path>
+                                                                            <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"></path>
+                                                                            <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"></path>
+                                                                        </svg><span>14.03.2022</span></span></td>
+                                                                <td class="cell-actions">
+                                                                    <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
+                                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
+                                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
+                                                                            </svg><span>Usuń</span></button></div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer border-0">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
+                                                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                                                                </svg><span>Poprzednie</span></button></div>
+                                                        <div class="col-auto d-none d-lg-block">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="row gx-2 align-items-center">
+                                                                        <div class="col-auto"><input class="form-control-sm form-control w--50 text-center" type="number" value="1"></div>
+                                                                        <div class="col-auto"><span>z 11 stron / 126 elementów</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="row gx-2 align-items-center">
+                                                                        <div class="col-auto"><select class="form-select-sm form-select">
+                                                                                <option value="">12</option>
+                                                                                <option value="">24</option>
+                                                                            </select></div>
+                                                                        <div class="col-auto"><span>na stronę</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
+                                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                                                                </svg></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow-sm">
+                                                <div class="table-responsive mb--n1">
+                                                    <table class="table mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Ilość produktów</td>
+                                                                <td class="text-end">5</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="row justify-content-end">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                                                    <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                                                                </svg><span>Wyślij zgłoszenie</span></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="card-footer">
                                 <div>
@@ -301,6 +481,166 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__products">
+            <div class="offcanvas-header d-block border-bottom py-2">
+                <div class="row align-items-center">
+                    <div class="col"><small class="d-block fs--small">Dostępny asortyment</small>
+                        <div>
+                            <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#collapse__offcanvas__search" data-bs-toggle="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg></button></div>
+                    <div class="col-auto"><button class="btn p-0" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg fs--xlarge">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                            </svg></button></div>
+                </div>
+            </div>
+            <div id="collapse__offcanvas__search" class="collapse">
+                <div class="bg-light-subtle p-3 border-bottom">
+                    <div class="input-group"><input class="form-control" type="text"><button class="btn btn-primary" type="button">Wyszukaj</button></div>
+                </div>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-product">
+                        <div class="row">
+                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item">worek</li>
+                                        <li class="list-inline-item">0.5 kg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col flex-grow-1">
+                                <div>
+                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                </svg><span>Dodaj</span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-product">
+                        <div class="row">
+                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item">worek</li>
+                                        <li class="list-inline-item">0.5 kg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col flex-grow-1">
+                                <div>
+                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                </svg><span>Dodaj</span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-product">
+                        <div class="row">
+                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item">worek</li>
+                                        <li class="list-inline-item">0.5 kg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col flex-grow-1">
+                                <div>
+                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                </svg><span>Dodaj</span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-product">
+                        <div class="row">
+                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item">worek</li>
+                                        <li class="list-inline-item">0.5 kg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col flex-grow-1">
+                                <div>
+                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                </svg><span>Dodaj</span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item list-group-item-product">
+                        <div class="row">
+                            <div class="col-12 col-sm-auto col-md-12 col-lg-auto col-xxl-auto flex-grow-1">
+                                <div><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                    <ul class="list-inline small">
+                                        <li class="list-inline-item">worek</li>
+                                        <li class="list-inline-item">0.5 kg</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col flex-grow-1">
+                                <div>
+                                    <div class="row gx-2 justify-content-end align-items-center flex-nowrap">
+                                        <div class="col-auto">
+                                            <div class="input-group input-group-sm"><input class="form-control w--80 text-end" type="number" value="1"><span class="input-group-text">szt.</span></div>
+                                        </div>
+                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                </svg><span>Dodaj</span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-light-subtle p-3 border-top py-2">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                            </svg><span>Poprzednie</span></button></div>
+                    <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                            </svg></button></div>
                 </div>
             </div>
         </div>

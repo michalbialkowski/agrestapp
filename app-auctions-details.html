@@ -91,7 +91,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/style.compiled.css?h=ada3b5be5b9152cf876fbafd10ca60fd">
+    <link rel="stylesheet" href="assets/css/style.compiled.css?h=1fd254a28703a774bc31a5169947c3b9">
 </head>
 
 <body>
@@ -177,7 +177,8 @@
                                                 <div class="col-auto"><img class="w--20 h-auto mt--n2" src="assets/img/icons/icon-auctions.svg?h=6f9764f7046c666e7e1a5e9813f61663"></div>
                                                 <div class="col"><span class="d-block"><a href="app-auctions.html">Aukcje</a></span>
                                                     <ul class="list-unstyled small mt-1">
-                                                        <li><a href="app-auctions.html">Lista aukcji</a></li>
+                                                        <li><a href="app-auctions.html">Trwające aukcje</a></li>
+                                                        <li><a href="app-auctions-archived.html">Zakończone</a></li>
                                                         <li><a href="app-auctions-create.html">Wystaw nową aukcję</a></li>
                                                     </ul>
                                                 </div>
@@ -228,7 +229,243 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div></div>
+                                <div>
+                                    <div class="row gx-0 gy-4 flex-column">
+                                        <div class="col">
+                                            <div class="card shadow-sm">
+                                                <div class="card-body">
+                                                    <div class="row gy-3 row-cols-1 row-cols-sm-2 row-cols-xl-4">
+                                                        <div class="col">
+                                                            <div class="row gx-0 gy-2 flex-column">
+                                                                <div class="col"><label class="col-form-label d-block line-height-none">Rozpoczęcie</label></div>
+                                                                <div class="col">
+                                                                    <div class="input-group input-group-sm"><span class="input-group-text">Data</span><input class="form-control" type="date"></div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="input-group input-group-sm"><span class="input-group-text">Godzina</span><input class="form-control" type="time"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="row gx-0 gy-2 flex-column">
+                                                                <div class="col"><label class="col-form-label d-block line-height-none">Zakończenie</label></div>
+                                                                <div class="col">
+                                                                    <div class="input-group input-group-sm"><span class="input-group-text">Data</span><input class="form-control" type="date"></div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="input-group input-group-sm"><span class="input-group-text">Godzina</span><input class="form-control" type="time"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="row gx-0 gy-2 flex-column">
+                                                                <div class="col"><label class="col-form-label d-block line-height-none">Dostawa</label></div>
+                                                                <div class="col">
+                                                                    <div class="input-group input-group-sm"><span class="input-group-text">Data</span><input class="form-control" type="date"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col">
+                                                            <div class="row gx-0 gy-2 flex-column">
+                                                                <div class="col"><label class="col-form-label d-block line-height-none">Zasady aukcji</label></div>
+                                                                <div class="col"><textarea class="form-control-sm form-control" rows="4"></textarea></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow-sm">
+                                                <div class="card-body">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-auto"><span class="fs-2">Do końca</span></div>
+                                                        <div class="col-auto"><span class="fs-2">100:32:14</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card-items">
+                                                <div class="card-header">
+                                                    <div class="row gx-2 align-items-center">
+                                                        <div class="col"><small class="d-block fs--small">Wybrane produkty</small>
+                                                            <div>
+                                                                <div class="dropdown"><button class="btn dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">Opakowania</button>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Wszystkie</a><a class="dropdown-item" href="#">Surowce</a><a class="dropdown-item" href="#">Chemia</a><a class="dropdown-item" href="#">Opakowania</a></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button" data-bs-target="#offcanvas__products" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-lg">
+                                                                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"></path>
+                                                                </svg><span>Dodaj</span></button></div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="cell-heading">Surowiec</th>
+                                                                <th class="cell-subheading">Cena w systemie</th>
+                                                                <th>Ambasador</th>
+                                                                <th>Chefs Culinar</th>
+                                                                <th>Bartosz</th>
+                                                                <th>Inter Fred</th>
+                                                                <th>Savpol</th>
+                                                                <th>Piwowar</th>
+                                                                <th>TechMat</th>
+                                                                <th>Agart</th>
+                                                                <th>Puratos</th>
+                                                                <th>Testowy dostawca</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="align-middle">
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small mb-0">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end cell-subheading">2.00</td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small mb-0">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end cell-subheading">2.00</td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small mb-0">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end cell-subheading">2.00</td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small mb-0">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end cell-subheading">2.00</td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="cell-heading"><small class="d-block">Hortex</small><span class="d-block">Agrest mrożony</span><span class="d-block"><span class="badge bg-primary rounded-pill">Surowiec</span></span>
+                                                                    <ul class="list-inline small mb-0">
+                                                                        <li class="list-inline-item">worek</li>
+                                                                        <li class="list-inline-item">0.5 kg</li>
+                                                                    </ul>
+                                                                </td>
+                                                                <td class="text-end cell-subheading">2.00</td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                                <td><input type="number" class="form-control form-control-sm text-end w--80" value="2.99"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="card-footer border-0">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
+                                                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                                                                </svg><span>Poprzednie</span></button></div>
+                                                        <div class="col-auto d-none d-lg-block">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-auto">
+                                                                    <div class="row gx-2 align-items-center">
+                                                                        <div class="col-auto"><input class="form-control-sm form-control w--50 text-center" type="number" value="1"></div>
+                                                                        <div class="col-auto"><span>z 11 stron / 126 elementów</span></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <div class="row gx-2 align-items-center">
+                                                                        <div class="col-auto"><select class="form-select-sm form-select">
+                                                                                <option value="">12</option>
+                                                                                <option value="">24</option>
+                                                                            </select></div>
+                                                                        <div class="col-auto"><span>na stronę</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
+                                                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                                                                </svg></button></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <div>
+                                    <div class="row g-0 align-items-end">
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search fs--xlarge">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                                </svg><small class="d-block mt-1">Wyszukaj</small></button></div>
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
+                                                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
+                                                </svg><small class="d-block mt-1">Filtruj</small></button></div>
+                                        <div class="col"><button class="btn btn-sm w-100 py-2" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-circle-fill fs--xlarge">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"></path>
+                                                </svg><small class="d-block mt-1">Dodaj</small></button></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
