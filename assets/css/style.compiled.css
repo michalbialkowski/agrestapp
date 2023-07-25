@@ -7967,7 +7967,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: none !important;
 }
 
-.shadow, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
+.shadow, .offcanvas .offcanvas-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -8019,7 +8019,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   position: static !important;
 }
 
-.position-relative, .app-btn-notification, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
+.position-relative, .offcanvas .offcanvas-header, .app-btn-notification, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   position: relative !important;
 }
 
@@ -9588,7 +9588,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-transparent, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header {
+.bg-transparent, .offcanvas .offcanvas-body .list-group .list-group-item, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header {
   --bs-bg-opacity: 1;
   background-color: transparent !important;
 }
@@ -9647,7 +9647,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   background-color: var(--bs-danger-bg-subtle) !important;
 }
 
-.bg-light-subtle, .offcanvas .offcanvas-footer, .table-form tbody th, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
+.bg-light-subtle, .offcanvas .offcanvas-body, .table-form tbody th, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
 .list-group-menu html[data-nav=products] .list-group-item[data-nav=products],
 html[data-nav=products] .list-group-menu .list-group-item[data-nav=products],
 .list-group-menu html[data-nav=products-half] .list-group-item[data-nav=products-half],
@@ -13431,6 +13431,9 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons] {
     border-right: 1px solid var(--bs-table-border-color);
     width: 1px;
   }
+}
+.offcanvas .offcanvas-header {
+  z-index: 1;
 }
 /* ! Flickity v2.2.1
 https://flickity.metafizzy.co
