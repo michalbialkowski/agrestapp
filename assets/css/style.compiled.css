@@ -1368,13 +1368,14 @@ progress {
   margin-left: 91.66666667%;
 }
 
-.g-0, .list-group-item-product > .row, .app-layout > .app-layout-row,
+.g-0, .offcanvas .offcanvas-body .list-group .list-group-item .row, .list-group-item-product > .row, .app-layout > .app-layout-row,
 .gx-0,
+.offcanvas .offcanvas-header > .row,
 .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row {
   --bs-gutter-x: 0;
 }
 
-.g-0, .list-group-item-product > .row, .app-layout > .app-layout-row,
+.g-0, .offcanvas .offcanvas-body .list-group .list-group-item .row, .list-group-item-product > .row, .app-layout > .app-layout-row,
 .gy-0 {
   --bs-gutter-y: 0;
 }
@@ -3776,7 +3777,7 @@ html[data-nav=addons] .btn[data-nav=addons]:focus-visible, .btn.show:focus-visib
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .btn-group-sm > .btn {
+.btn-sm, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.74375rem;
@@ -4214,7 +4215,7 @@ html[data-nav=addons] .btn-group-vertical > .btn[data-nav=addons] {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .offcanvas .offcanvas-header > .row > *.col-btn .btn + .dropdown-toggle-split, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
@@ -7954,7 +7955,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: table-cell !important;
 }
 
-.d-flex, .table .list-statuses, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square, .flex-area, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *, .app-layout > .app-layout-row > * {
+.d-flex, .offcanvas .offcanvas-header > .row > *.col-title, .table .list-statuses, .btn-group-actions > .btn, .btn-action, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .btn-square, .flex-area, .offcanvas .offcanvas-body .list-group .list-group-item .row > *, .offcanvas .offcanvas-header > .row > *, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *, .app-layout > .app-layout-row > * {
   display: flex !important;
 }
 
@@ -8018,7 +8019,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   position: static !important;
 }
 
-.position-relative, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-notification {
+.position-relative, .app-btn-notification, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   position: relative !important;
 }
 
@@ -8104,7 +8105,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   border: 0 !important;
 }
 
-.border-top {
+.border-top, .offcanvas .offcanvas-footer {
   border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
@@ -8112,7 +8113,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   border-top: 0 !important;
 }
 
-.border-end, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn:first-child {
+.border-end, .offcanvas .offcanvas-header > .row > *.col-btn:first-child, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn:first-child {
   border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
@@ -8128,11 +8129,11 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   border-bottom: 0 !important;
 }
 
-.border-start, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn {
+.border-start, .offcanvas .offcanvas-body .list-group .list-group-item .row > *.col-btn, .offcanvas .offcanvas-header > .row > *.col-btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn {
   border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
-.border-start-0, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn:first-child {
+.border-start-0, .offcanvas .offcanvas-header > .row > *.col-btn:first-child, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn:first-child {
   border-left: 0 !important;
 }
 
@@ -8270,7 +8271,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   width: 75% !important;
 }
 
-.w-100 {
+.w-100, .offcanvas .offcanvas-footer .btn {
   width: 100% !important;
 }
 
@@ -8322,7 +8323,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   min-height: 100vh !important;
 }
 
-.flex-fill, .flex-area > *, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > * > *, .app-layout > .app-layout-row > * > * {
+.flex-fill, .flex-area > *, .offcanvas .offcanvas-body .list-group .list-group-item .row > * > *, .offcanvas .offcanvas-header > .row > * > *, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > * > *, .app-layout > .app-layout-row > * > * {
   flex: 1 1 auto !important;
 }
 
@@ -8362,7 +8363,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   flex-wrap: wrap !important;
 }
 
-.flex-nowrap, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row, .app-layout > .app-layout-row {
+.flex-nowrap, .offcanvas .offcanvas-header > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row, .app-layout > .app-layout-row {
   flex-wrap: nowrap !important;
 }
 
@@ -8378,7 +8379,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square {
+.justify-content-center, .btn-action, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square {
   justify-content: center !important;
 }
 
@@ -8402,7 +8403,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   align-items: flex-end !important;
 }
 
-.align-items-center, .btn-action, .btn-group-actions > .btn, .list-group-item-product > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square {
+.align-items-center, .offcanvas .offcanvas-header > .row > *.col-title, .btn-group-actions > .btn, .list-group-item-product > .row, .btn-action, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .btn-square {
   align-items: center !important;
 }
 
@@ -8624,7 +8625,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   margin-right: 0 !important;
 }
 
-.me-1, .btn-action > span:first-child, .btn-group-actions > .btn > span:first-child {
+.me-1, .btn-group-actions > .btn > span:first-child, .btn-action > span:first-child {
   margin-right: 0.25rem !important;
 }
 
@@ -8680,7 +8681,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   margin-left: 0 !important;
 }
 
-.ms-1, .btn-action *:first-child + span, .btn-group-actions > .btn *:first-child + span {
+.ms-1, .btn-group-actions > .btn *:first-child + span, .btn-action *:first-child + span {
   margin-left: 0.25rem !important;
 }
 
@@ -8854,7 +8855,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   margin-left: -3rem !important;
 }
 
-.p-0, .list-group-item-product, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body {
+.p-0, .offcanvas .offcanvas-body .list-group .list-group-item, .offcanvas .offcanvas-header, .list-group-item-product, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-body {
   padding: 0 !important;
 }
 
@@ -8862,11 +8863,11 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding: 0.25rem !important;
 }
 
-.p-2, .table-form tbody th, .table-form tbody td, .list-group-item-product > .row > * {
+.p-2, .offcanvas .offcanvas-body .list-group .list-group-item .row > *.col-option > div, .table-form tbody th, .table-form tbody td, .list-group-item-product > .row > * {
   padding: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .offcanvas .offcanvas-footer {
   padding: 1rem !important;
 }
 
@@ -8888,7 +8889,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding-left: 0.25rem !important;
 }
 
-.px-2, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
+.px-2, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
 }
@@ -8918,7 +8919,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding-bottom: 0.25rem !important;
 }
 
-.py-2, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
+.py-2, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
@@ -9582,7 +9583,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-body, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-btn-notification .badge {
+.bg-body, .app-btn-notification .badge, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9646,7 +9647,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   background-color: var(--bs-danger-bg-subtle) !important;
 }
 
-.bg-light-subtle, .table-form tbody th, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
+.bg-light-subtle, .offcanvas .offcanvas-footer, .table-form tbody th, .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
 .list-group-menu html[data-nav=products] .list-group-item[data-nav=products],
 html[data-nav=products] .list-group-menu .list-group-item[data-nav=products],
 .list-group-menu html[data-nav=products-half] .list-group-item[data-nav=products-half],
@@ -9696,7 +9697,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
   pointer-events: auto !important;
 }
 
-.rounded, .card-items .card-footer input, .card-items .card-footer select, .btn-action, .btn-group-actions > .btn {
+.rounded, .card-items .card-footer input, .card-items .card-footer select, .btn-group-actions > .btn, .btn-action {
   border-radius: var(--bs-border-radius) !important;
 }
 
@@ -10433,7 +10434,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
-  .px-sm-3, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
+  .px-sm-3, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
@@ -13347,16 +13348,6 @@ body {
   aspect-ratio: 1;
 }
 
-.app-btn-notification .badge {
-  width: 26px;
-  height: 26px;
-  line-height: 1;
-}
-.app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td {
-  width: 20px;
-  height: 20px;
-}
-
 .app-layout > .app-layout-row > *.app-layout-col-sidebar {
   max-width: 225px;
 }
@@ -13370,6 +13361,16 @@ body {
 }
 .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer {
   z-index: 1;
+}
+
+.app-btn-notification .badge {
+  width: 26px;
+  height: 26px;
+  line-height: 1;
+}
+.app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 575.98px) {
@@ -14455,7 +14456,7 @@ body.compensate-for-scrollbar {
   font-weight: 400 !important;
 }
 
-.fw--500, .btn-group-actions > .btn, .btn-action, .card-items .table thead > tr > * {
+.fw--500, .btn-action, .btn-group-actions > .btn, .card-items .table thead > tr > * {
   font-weight: 500 !important;
 }
 
@@ -16559,7 +16560,7 @@ body.compensate-for-scrollbar {
   margin-right: 1px !important;
 }
 
-.mt--1, .btn-group-actions > .btn > span, .btn-action > span,
+.mt--1, .btn-action > span, .btn-group-actions > .btn > span,
 .my--1,
 .m--1 {
   margin-top: 1px !important;
@@ -16591,7 +16592,7 @@ body.compensate-for-scrollbar {
   margin-top: -1px !important;
 }
 
-.mb--n1, .btn-group-actions > .btn > span, .btn-action > span, .table-form,
+.mb--n1, .btn-action > span, .btn-group-actions > .btn > span, .table-form,
 .my--n1,
 .m--n1 {
   margin-bottom: -1px !important;
@@ -20869,11 +20870,11 @@ body.compensate-for-scrollbar {
   max-width: 65px !important;
 }
 
-.h--65, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row {
+.h--65, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row, .offcanvas .offcanvas-header > .row {
   height: 65px !important;
 }
 
-.minh--65, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row {
+.minh--65, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row, .offcanvas .offcanvas-header > .row {
   min-height: 65px !important;
 }
 
