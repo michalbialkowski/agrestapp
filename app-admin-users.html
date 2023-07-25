@@ -91,7 +91,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=latin-ext&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/style.compiled.css?h=9cf418042a4c7f2ee8764dd0c74c7e51">
+    <link rel="stylesheet" href="assets/css/style.compiled.css?h=f509fa5013d5306ab3c73eea828d533c">
 </head>
 
 <body>
@@ -446,20 +446,74 @@
             <div class="offcanvas-body p-0">
                 <ul class="list-group mt--n1">
                     <li class="list-group-item">
-                        <div class="row">
-                            <div class="col col-option">
-                                <div><label class="form-label d-block">Wyszukaj</label><input type="text" class="form-control"></div>
-                            </div>
-                            <div class="col-auto col-btn"><button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg">
+                        <div class="row align-items-baseline">
+                            <div class="col"><label class="col-form-label d-block">Wyszukaj</label></div>
+                            <div class="col-auto"><button class="btn btn-sm p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg me-1">
                                         <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                                    </svg></button></div>
-                        </div>
+                                    </svg><span>Usuń filtr</span></button></div>
+                        </div><input type="text" class="form-control">
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-baseline">
+                            <div class="col"><label class="col-form-label d-block">Sortuj wg</label></div>
+                            <div class="col-auto"><button class="btn btn-sm p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg me-1">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                                    </svg><span>Usuń filtr</span></button></div>
+                        </div><select class="form-select">
+                            <option value="" selected="">Wybierz…</option>
+                            <optgroup label="Nazwa">
+                                <option value="">Nazwa: A-Z</option>
+                                <option value="">Nazwa: Z-A</option>
+                            </optgroup>
+                            <optgroup label="Ostatnie logowanie">
+                                <option value="">Ostatnie logowanie: najwcześniej</option>
+                                <option value="">Ostatnie logowanie: najpóźniej</option>
+                            </optgroup>
+                        </select>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-baseline">
+                            <div class="col"><label class="col-form-label d-block">Firma</label></div>
+                            <div class="col-auto"><button class="btn btn-sm p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg me-1">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                                    </svg><span>Usuń filtr</span></button></div>
+                        </div><select class="form-select">
+                            <option value="" selected="">Wybierz…</option>
+                            <option value="">Prosix System</option>
+                            <option value="">EG</option>
+                            <option value="">Testowa</option>
+                            <option value="">Tenneco Automotive Europe Sp. z o.o.</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="row align-items-baseline">
+                            <div class="col"><label class="col-form-label d-block">Rola</label></div>
+                            <div class="col-auto"><button class="btn btn-sm p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg me-1">
+                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                                    </svg><span>Usuń filtr</span></button></div>
+                        </div><select class="form-select">
+                            <option value="" selected="">Wybierz…</option>
+                            <option value="">Dostawca</option>
+                            <option value="">Użytkownik</option>
+                            <option value="">Administrator</option>
+                            <option value="">Dystrybutor</option>
+                            <option value="">Magazynier</option>
+                            <option value="">Piekarz</option>
+                            <option value="">Cukiernik</option>
+                        </select>
                     </li>
                 </ul>
             </div>
-            <div class="offcanvas-footer"><button class="btn btn-primary btn-action" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                        <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
-                    </svg><span>Zastosuj</span></button></div>
+            <div class="offcanvas-footer">
+                <div class="row gx-2">
+                    <div class="col-auto"><button class="btn btn-dark btn-action" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg">
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+                            </svg><span>Resetuj</span></button></div>
+                    <div class="col"><button class="btn btn-primary btn-action" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
+                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
+                            </svg><span>Zastosuj</span></button></div>
+                </div>
+            </div>
         </div>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__edit">
             <div class="offcanvas-header d-block border-bottom py-2">
