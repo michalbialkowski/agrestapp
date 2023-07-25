@@ -7953,7 +7953,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: table-cell !important;
 }
 
-.d-flex, .table .list-statuses, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .flex-area, .app-layout > .app-layout-row > * {
+.d-flex, .table .list-statuses, .btn-action, .btn-group-actions > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square, .flex-area, .app-layout > .app-layout-row > * {
   display: flex !important;
 }
 
@@ -8377,7 +8377,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
+.justify-content-center, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square {
   justify-content: center !important;
 }
 
@@ -8401,7 +8401,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   align-items: flex-end !important;
 }
 
-.align-items-center, .btn-action, .btn-group-actions > .btn, .list-group-item-product > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge {
+.align-items-center, .btn-action, .btn-group-actions > .btn, .list-group-item-product > .row, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-btn-notification .badge > small, .app-btn-notification .badge > .small, .app-btn-notification .table-form tbody .badge > th, .table-form tbody .app-btn-notification .badge > th, .app-btn-notification .table-form tbody .badge > td, .table-form tbody .app-btn-notification .badge > td, .app-btn-notification .badge, .btn-square {
   align-items: center !important;
 }
 
@@ -13340,6 +13340,10 @@ body {
 
 .maxh-100vh, .app-layout > .app-layout-row > *.app-layout-col-main > .card, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card, .app-layout > .app-layout-row > *, .col-100vh {
   max-height: 100vh;
+}
+
+.btn-square {
+  aspect-ratio: 1;
 }
 
 .app-btn-notification .badge {
