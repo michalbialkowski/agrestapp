@@ -13365,6 +13365,11 @@ body {
 .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header {
   z-index: 1;
 }
+@media (min-width: 992px) {
+  .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn.col-btn-menu {
+    display: none !important;
+  }
+}
 .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer {
   z-index: 1;
 }
