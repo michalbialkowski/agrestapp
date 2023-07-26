@@ -7881,7 +7881,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   overflow: auto !important;
 }
 
-.overflow-hidden, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group, .app-layout > .app-layout-row > *.app-layout-col-main > .card {
+.overflow-hidden, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group, .app-layout > .app-layout-row > *.app-layout-col-main > .card {
   overflow: hidden !important;
 }
 
@@ -7965,7 +7965,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: inline-flex !important;
 }
 
-.d-none, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
+.d-none, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
   display: none !important;
 }
 
@@ -8097,7 +8097,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   transform: translateY(-50%) !important;
 }
 
-.border, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group {
+.border, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group {
   border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
@@ -8107,7 +8107,11 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
 .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group .table-form tbody td > div > input[type=email],
 .table-form tbody .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group td > div > input[type=email],
 .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group .table-form tbody td > div > input[type=password],
-.table-form tbody .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group td > div > input[type=password], .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card {
+.table-form tbody .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group td > div > input[type=password], .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group .form-control, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group .table-form tbody td > div > input[type=text], .table-form tbody .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group td > div > input[type=text],
+.app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group .table-form tbody td > div > input[type=email],
+.table-form tbody .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group td > div > input[type=email],
+.app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group .table-form tbody td > div > input[type=password],
+.table-form tbody .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group td > div > input[type=password], .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header, .app-layout > .app-layout-row > *.app-layout-col-main > .card, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card > .card-footer, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card .card-header, .app-layout > .app-layout-row > *.app-layout-col-sidebar > .card {
   border: 0 !important;
 }
 
@@ -8135,7 +8139,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   border-bottom: 0 !important;
 }
 
-.border-start, .offcanvas .offcanvas-header > .row > *.col-btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-timer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn {
+.border-start, .offcanvas .offcanvas-header > .row > *.col-btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-timer, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search {
   border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 
@@ -8895,7 +8899,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding-left: 0.25rem !important;
 }
 
-.px-2, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
+.px-2, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
 }
@@ -8925,7 +8929,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding-bottom: 0.25rem !important;
 }
 
-.py-2, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
+.py-2, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
   padding-top: 0.5rem !important;
   padding-bottom: 0.5rem !important;
 }
@@ -8935,7 +8939,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   padding-bottom: 1rem !important;
 }
 
-.py-4 {
+.py-4, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-body {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -9703,7 +9707,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
   pointer-events: auto !important;
 }
 
-.rounded, .card-items .card-footer input, .card-items .card-footer select, .btn-group-actions > .btn, .btn-action, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group {
+.rounded, .card-items .card-footer input, .card-items .card-footer select, .btn-group-actions > .btn, .btn-action, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div .input-group, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search .input-group {
   border-radius: var(--bs-border-radius) !important;
 }
 
@@ -10440,7 +10444,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
-  .px-sm-3, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
+  .px-sm-3, .offcanvas .offcanvas-header > .row > *.col-btn .btn, .offcanvas .offcanvas-header > .row > *.col-title, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-btn > .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer > div > .row > *.col-search > div, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn .btn, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
@@ -13366,7 +13370,18 @@ body {
   z-index: 1;
 }
 @media (min-width: 992px) {
+  .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search {
+    display: flex !important;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
   .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn.col-btn-menu {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn.col-btn-filters, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-btn.col-btn-add {
     display: none !important;
   }
 }
@@ -16359,7 +16374,7 @@ body.compensate-for-scrollbar {
   line-height: 1;
 }
 
-.line-height-small {
+.line-height-small, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title .fs-5, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-title .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-timer > div {
   line-height: 1.15;
 }
 
