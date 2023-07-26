@@ -7933,7 +7933,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: inline-block !important;
 }
 
-.d-block, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer {
+.d-block, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .d-mobile {
   display: block !important;
 }
 
@@ -7965,7 +7965,7 @@ html[data-nav=addons] .carousel-indicators [data-nav=addons] {
   display: inline-flex !important;
 }
 
-.d-none, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search, .app-layout > .app-layout-row > *.app-layout-col-sidebar {
+.d-none, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-header > div > .row > *.col-search, .app-layout > .app-layout-row > *.app-layout-col-sidebar, .d-desktop {
   display: none !important;
 }
 
@@ -11312,7 +11312,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
   .d-lg-inline-block {
     display: inline-block !important;
   }
-  .d-lg-block {
+  .d-lg-block, .d-desktop {
     display: block !important;
   }
   .d-lg-grid {
@@ -11336,7 +11336,7 @@ html[data-nav=addons] .list-group-menu .list-group-item[data-nav=addons], .app-l
   .d-lg-inline-flex {
     display: inline-flex !important;
   }
-  .d-lg-none, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer {
+  .d-lg-none, .app-layout > .app-layout-row > *.app-layout-col-main > .card > .card-footer, .d-mobile {
     display: none !important;
   }
   .flex-lg-fill {
