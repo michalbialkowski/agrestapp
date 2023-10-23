@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="auto" lang="pl" data-nav="orders">
+<html data-bs-theme="auto" lang="pl" data-nav="auctions">
 
 <head>
     <meta charset="utf-8">
@@ -216,25 +216,14 @@
                             <div class="card-header">
                                 <div>
                                     <div class="row">
+                                        <div class="col-auto col-btn"><a class="btn" role="button" href="app-auctions.html"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-bar-left fs--xxlarge">
+                                                    <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"></path>
+                                                </svg></a></div>
                                         <div class="col col-title">
-                                            <div><small class="d-block fs--small">Zamówienia</small>
-                                                <div>
-                                                    <div class="dropdown"><button class="btn btn-lg dropdown-toggle p-0" aria-expanded="false" data-bs-toggle="dropdown" type="button">W trakcie realizacji</button>
-                                                        <div class="dropdown-menu"><a class="dropdown-item" href="app-orders-create.html">Nowe zamówienie</a><a class="dropdown-item" href="app-orders-pending.html">Oczekujące</a><a class="dropdown-item" href="app-orders-processing.html">W trakcie realizacji</a><a class="dropdown-item" href="app-orders-delivered.html">Historia zamówień</a><a class="dropdown-item" href="app-orders-invoices.html">Faktury</a></div>
-                                                    </div>
-                                                </div>
+                                            <div><small class="d-block fs--small">Firmy</small>
+                                                <div><span class="fs-5">Szczegóły aukcji</span></div>
                                             </div>
                                         </div>
-                                        <div class="col-auto col-search">
-                                            <div>
-                                                <div class="input-group"><input class="form-control" type="text" placeholder="Szukaj…"><button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg">
-                                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto col-btn col-btn-filters"><button class="btn" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
-                                                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
-                                                </svg><small class="d-block mt-1">Filtry</small></button></div>
                                         <div class="col-auto col-btn col-btn-menu"><button class="btn app-btn-notification p-0" type="button" data-bs-target="#modal__menu" data-bs-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list fs--xxlarge">
                                                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
                                                 </svg></button></div>
@@ -242,176 +231,132 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="d-mobile">
-                                    <div class="row gx-0 gy-4 flex-column">
+                                <div>
+                                    <div class="row gx-0 gy-3 flex-column">
                                         <div class="col">
-                                            <div class="row gx-0 gy-3 flex-column">
-                                                <div class="col">
-                                                    <div class="card shadow-sm">
-                                                        <div class="card-header">
-                                                            <h5 class="mb-0">Zamówienie nr 37</h5>
-                                                        </div>
-                                                        <div>
-                                                            <table class="table mb-0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>Pracownik</th>
-                                                                        <td class="text-end">Rafa</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Data zamówienia</th>
-                                                                        <td class="text-end">21.08.2022</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Ilość</th>
-                                                                        <td class="text-end">7 szt.</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Suma</th>
-                                                                        <td class="text-end">23.09</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Status</th>
-                                                                        <td class="text-end"><span class="text-nowrap bg-light-subtle px-3 py-1 rounded-pill">W trakcie realizacji</span></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <div class="card-footer border-0">
-                                                            <div class="overflow-scroll">
-                                                                <div class="row justify-content-end align-items-center">
+                                            <div class="card shadow-sm">
+                                                <div class="card-header">
+                                                    <h5 class="mb-0">Dane firmy</h5>
+                                                </div>
+                                                <div>
+                                                    <table class="table table-form">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Nazwa firmy</th>
+                                                                <td>Prosix System</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Adres firmy</th>
+                                                                <td>1 Maja 34<br>58-260 Zbrojowiece Zdrój</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>NIP</th>
+                                                                <td>882 1900223</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Telefon firmy</th>
+                                                                <td>111 222 333</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card shadow-sm">
+                                                <div class="card-header">
+                                                    <h5 class="mb-0">Subskrypcja</h5>
+                                                </div>
+                                                <div>
+                                                    <table class="table table-form">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Plan</th>
+                                                                <td>Rozszerzony</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Ważne do</th>
+                                                                <td>2122-07-16 (za 98 lat)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="d-mobile"></div>
+                                            <div class="d-desktop">
+                                                <div class="card card-items">
+                                                    <div class="table-responsive">
+                                                        <table class="table mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>Płatnik</th>
+                                                                    <th class="cell-heading">Plan</th>
+                                                                    <th>Kwota</th>
+                                                                    <th>ID zamówienia</th>
+                                                                    <th>Token</th>
+                                                                    <th>ID płatności</th>
+                                                                    <th>Data płatności</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody class="align-middle">
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>Jan Kowalski</td>
+                                                                    <td class="cell-heading">Zwykły</td>
+                                                                    <td>1000 zł</td>
+                                                                    <td>4564654674</td>
+                                                                    <td>0123456789ABCDE</td>
+                                                                    <td>11</td>
+                                                                    <td>2023.02.01</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Jan Kowalski</td>
+                                                                    <td class="cell-heading">Rozszerzony</td>
+                                                                    <td>2000 zł</td>
+                                                                    <td>4564654674</td>
+                                                                    <td>0123456789ABCDE</td>
+                                                                    <td>12</td>
+                                                                    <td>2023.02.01</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="card-footer border-0">
+                                                        <div class="row justify-content-between align-items-center">
+                                                            <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
+                                                                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+                                                                    </svg><span>Poprzednie</span></button></div>
+                                                            <div class="col-auto d-none d-lg-block">
+                                                                <div class="row align-items-center">
                                                                     <div class="col-auto">
-                                                                        <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
-                                                                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                                                                                    <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-                                                                                </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
-                                                                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
-                                                                                </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
-                                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
-                                                                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
-                                                                                </svg><span>Usuń</span></button></div>
+                                                                        <div class="row gx-2 align-items-center">
+                                                                            <div class="col-auto"><input class="form-control-sm form-control w--50 text-center" type="number" value="1"></div>
+                                                                            <div class="col-auto"><span>z 11 stron / 126 elementów</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <div class="row gx-2 align-items-center">
+                                                                            <div class="col-auto"><select class="form-select-sm form-select">
+                                                                                    <option value="">12</option>
+                                                                                    <option value="">24</option>
+                                                                                </select></div>
+                                                                            <div class="col-auto"><span>na stronę</span></div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
+                                                                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+                                                                    </svg></button></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
-                                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
-                                                        </svg><span>Poprzednie</span></button></div>
-                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
-                                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-desktop">
-                                    <div class="card card-items">
-                                        <div class="table-responsive">
-                                            <table class="table mb-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th class="cell-heading">Nr zamówienia</th>
-                                                        <th>Pracownik</th>
-                                                        <th>Data zamówienia</th>
-                                                        <th>Ilość</th>
-                                                        <th>Suma</th>
-                                                        <th>Status</th>
-                                                        <th class="cell-actions">Akcje</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="align-middle">
-                                                    <tr>
-                                                        <td class="cell-heading">145</td>
-                                                        <td>Admin</td>
-                                                        <td>21.03.2023</td>
-                                                        <td>100 szt.</td>
-                                                        <td>100.00</td>
-                                                        <td><span class="text-nowrap bg-secondary-subtle px-3 py-1 rounded-pill">W trakcie realizacji</span></td>
-                                                        <td class="cell-actions">
-                                                            <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
-                                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                                                                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-                                                                    </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
-                                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
-                                                                    </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
-                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
-                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
-                                                                    </svg><span>Usuń</span></button></div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="cell-heading">143</td>
-                                                        <td>Admin</td>
-                                                        <td>18.03.2023</td>
-                                                        <td>2 szt.</td>
-                                                        <td>4.00</td>
-                                                        <td><span class="text-nowrap bg-secondary-subtle px-3 py-1 rounded-pill">W trakcie realizacji</span></td>
-                                                        <td class="cell-actions">
-                                                            <div class="btn-group btn-group-sm btn-group-actions" role="group"><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-info-circle">
-                                                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                                                                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-                                                                    </svg><span>Szczegóły</span></button><button class="btn btn-primary" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen">
-                                                                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
-                                                                    </svg><span>Edytuj</span></button><button class="btn btn-danger" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash">
-                                                                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"></path>
-                                                                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"></path>
-                                                                    </svg><span>Usuń</span></button></div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="card-footer border-0">
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-left">
-                                                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
-                                                        </svg><span>Poprzednie</span></button></div>
-                                                <div class="col-auto d-none d-lg-block">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-auto">
-                                                            <div class="row gx-2 align-items-center">
-                                                                <div class="col-auto"><input class="form-control-sm form-control w--50 text-center" type="number" value="1"></div>
-                                                                <div class="col-auto"><span>z 11 stron / 126 elementów</span></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-auto">
-                                                            <div class="row gx-2 align-items-center">
-                                                                <div class="col-auto"><select class="form-select-sm form-select">
-                                                                        <option value="">12</option>
-                                                                        <option value="">24</option>
-                                                                    </select></div>
-                                                                <div class="col-auto"><span>na stronę</span></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-auto"><button class="btn btn-primary btn-sm btn-action" type="button"><span>Następne</span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-right">
-                                                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div>
-                                    <div class="row">
-                                        <div class="col col-search">
-                                            <div>
-                                                <div class="input-group"><input class="form-control" type="text" placeholder="Szukaj…"><button class="btn" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg">
-                                                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                                                        </svg></button></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto col-btn"><button class="btn" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-funnel fs--xlarge">
-                                                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"></path>
-                                                </svg><small class="d-block mt-1">Filtruj</small></button></div>
                                     </div>
                                 </div>
                             </div>
@@ -509,60 +454,6 @@
                                     </svg><span>Anuluj</span></button></div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas__filters">
-            <div class="offcanvas-header d-block border-bottom py-2">
-                <div class="row">
-                    <div class="col col-title">
-                        <div><span class="fs-5 d-block fs--small">Filtruj</span></div>
-                    </div>
-                    <div class="col-auto col-btn"><button class="btn p-0" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg fs--xlarge">
-                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                            </svg></button></div>
-                </div>
-            </div>
-            <div class="offcanvas-body p-0">
-                <ul class="list-group mt--n1">
-                    <li class="list-group-item">
-                        <div class="row align-items-baseline">
-                            <div class="col"><label class="col-form-label d-block">Sortuj wg</label></div>
-                            <div class="col-auto"><button class="btn btn-sm p-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg me-1">
-                                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                                    </svg><span>Usuń filtr</span></button></div>
-                        </div><select class="form-select">
-                            <option value="" selected="">Wybierz…</option>
-                            <optgroup label="Nazwa">
-                                <option value="">Nazwa: A-Z</option>
-                                <option value="">Nazwa: Z-A</option>
-                            </optgroup>
-                            <optgroup label="Wartość zamówienia">
-                                <option value="">Wartość zamówienia: najniższa</option>
-                                <option value="">Wartość zamówienia: najwyższa</option>
-                            </optgroup>
-                            <optgroup label="Ilość">
-                                <option value="">Ilość: najwyższa</option>
-                                <option value="">Ilość: najniższa</option>
-                            </optgroup>
-                            <optgroup label="Dodane">
-                                <option value="">Dodane: ostatnio</option>
-                                <option value="">Dodane: najpierw</option>
-                            </optgroup>
-                        </select>
-                    </li>
-                </ul>
-            </div>
-            <div class="offcanvas-footer">
-                <div class="row gx-2">
-                    <div class="col-auto"><button class="btn btn-dark btn-action" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-lg">
-                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
-                            </svg><span>Resetuj</span></button></div>
-                    <div class="col"><button class="btn btn-primary btn-action" type="button" data-bs-target="#offcanvas__filters" data-bs-toggle="offcanvas"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-lg">
-                                <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"></path>
-                            </svg><span>Zastosuj</span></button></div>
                 </div>
             </div>
         </div>
