@@ -13419,19 +13419,6 @@ header + main .app-layout > .app-layout-row > *.app-layout-col-main > .card {
   height: 20px;
 }
 
-@media (max-width: 575.98px) {
-  .list-group-item-product > .row > *:nth-child(2) {
-    border-top: 1px solid var(--bs-list-group-border-color);
-    background: var(--bs-card-cap-bg);
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .list-group-item-product > .row > *:nth-child(2) {
-    border-top: 1px solid var(--bs-list-group-border-color);
-    background: var(--bs-card-cap-bg);
-  }
-}
-
 .list-group-menu .list-group-item.active, .list-group-menu html[data-nav=storages] .list-group-item[data-nav=storages], html[data-nav=storages] .list-group-menu .list-group-item[data-nav=storages],
 .list-group-menu html[data-nav=products] .list-group-item[data-nav=products],
 html[data-nav=products] .list-group-menu .list-group-item[data-nav=products],
